@@ -1,5 +1,5 @@
 package hadl.meta.model;
 
-public class Component {
+public interface Component {
 
 }
