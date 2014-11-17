@@ -1,4 +1,5 @@
-package hadl.meta.model;
+package hadl.component.meta.model;
+
 
 public class SimpleComponent implements Component {
 

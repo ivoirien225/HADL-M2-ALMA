@@ -1,4 +1,6 @@
-package hadl.meta.model;
+package hadl.component.meta.model;
+
+import hadl.connector.meta.model.Connector;
 
 public class Configuration implements Component, Connector {
 

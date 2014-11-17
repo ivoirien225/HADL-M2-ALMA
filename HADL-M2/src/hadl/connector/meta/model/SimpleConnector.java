@@ -1,4 +1,5 @@
-package hadl.meta.model;
+package hadl.connector.meta.model;
+
 
 public class SimpleConnector implements Connector {
 
