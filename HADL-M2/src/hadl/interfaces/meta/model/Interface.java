@@ -1,5 +1,5 @@
 package hadl.interfaces.meta.model;
 
-public class Interface {
-
+public abstract class Interface {
+	public String name;
 }

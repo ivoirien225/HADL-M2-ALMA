@@ -1,14 +1,30 @@
 package hadl.connector.meta.model;
 
-import java.util.ArrayList;
-import java.util.List;
 
 
-public class SimpleConnector implements Connector {
+public class SimpleConnector extends Connector {
 
-	List<Glue> listConnector = new ArrayList<Glue>();
+	Glue glue = new Glue();
+	public SimpleConnector(String name, Glue glue) {
+		this.name = name;
+		this.glue = glue;
+	}
+	public Glue getGlue() {
+		return glue;
+	}
+	public void setGlue(Glue glue) {
+		this.glue = glue;
+	}
+	@Override
+	public String caller() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-	public SimpleConnector() {
+	@Override
+	public String callee() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
