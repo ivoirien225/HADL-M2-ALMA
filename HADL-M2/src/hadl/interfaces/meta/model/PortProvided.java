@@ -1,9 +1,8 @@
 package hadl.interfaces.meta.model;
 
-import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 
-public class PortProvided extends Port implements Observable{
+public class PortProvided extends Port{
 	
 	
 	@Override
