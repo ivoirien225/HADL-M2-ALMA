@@ -1,9 +1,7 @@
 package hadl.connector.meta.model;
 
-import hadl.tools.interfaces.Observable;
-import hadl.tools.interfaces.Observer;
 
-public class SimpleConnector extends Connector implements Observable{
+public class SimpleConnector extends Connector {
 
 	private Glue glue;
 	
@@ -16,17 +14,5 @@ public class SimpleConnector extends Connector implements Observable{
 	}
 	public void setGlue(Glue glue) {
 		this.glue = glue;
-	}
-	@Override
-	public boolean notifyObservers() {
-		return false;
-	}
-	@Override
-	public boolean addObserver(Observer ob) {
-		return false;
-	}
-	@Override
-	public boolean deleteObserver(Observer ob) {
-		return false;
 	}
 }

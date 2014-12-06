@@ -1,9 +1,19 @@
 package hadl.component.model;
 
-public class Client {
+import java.util.List;
+import hadl.component.meta.model.SimpleComponent;
+import hadl.interfaces.meta.model.PortProvided;
+import hadl.interfaces.meta.model.PortRequired;
+import hadl.interfaces.meta.model.ServiceProvided;
+import hadl.interfaces.meta.model.ServiceRequired;
 
-	public Client() {
-		// TODO Auto-generated constructor stub
+public class Client extends SimpleComponent{
+
+	public Client(String name, List<PortProvided> portProvided,
+			List<PortRequired> portRequired,
+			List<ServiceProvided> serviceProvided,
+			List<ServiceRequired> required) {
+		super(name, portProvided, portRequired, serviceProvided, required);
 	}
 
 }
