@@ -11,7 +11,7 @@ import hadl.interfaces.meta.model.ServiceRequired;
 import hadl.tools.interfaces.Observer;
 
 
-public class Configuration extends Component implements Observer{
+public class Configuration extends Component{
 
 	public Configuration(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
@@ -44,11 +44,6 @@ public class Configuration extends Component implements Observer{
 
 	public void setListComponent(List<Component> listComponent) {
 		this.listComponent = listComponent;
-	}
-
-	@Override
-	public String update() {
-		return null;
 	}
 
 	@Override
