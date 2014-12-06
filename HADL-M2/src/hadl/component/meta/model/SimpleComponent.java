@@ -38,6 +38,12 @@ public class SimpleComponent extends Component implements Observable{
 		return false;
 	}
 
+	@Override
+	public String callService(String nameService) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 
 }

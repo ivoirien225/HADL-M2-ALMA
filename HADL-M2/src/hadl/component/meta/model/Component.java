@@ -4,18 +4,15 @@ import hadl.interfaces.meta.model.PortProvided;
 import hadl.interfaces.meta.model.PortRequired;
 import hadl.interfaces.meta.model.ServiceProvided;
 import hadl.interfaces.meta.model.ServiceRequired;
-import hadl.tools.interfaces.Observable;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Component{
-	protected String name;
-	protected List<PortProvided> portProvided = new ArrayList<PortProvided>();
-	protected List<PortRequired> portRequired = new ArrayList<PortRequired>();
-	
-	protected List<ServiceProvided> serviceProvided = new ArrayList<ServiceProvided>();
-	protected List<ServiceRequired> Required = new ArrayList<ServiceRequired>();
+	private String name;
+	private List<PortProvided> portProvided = new ArrayList<PortProvided>();
+	private List<PortRequired> portRequired = new ArrayList<PortRequired>();
+	private List<ServiceProvided> serviceProvided = new ArrayList<ServiceProvided>();
+	private List<ServiceRequired> serviceRequired = new ArrayList<ServiceRequired>();
 	
     /**
      * Constructor
@@ -24,12 +21,34 @@ public abstract class Component{
 	public Component(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
 			List<ServiceProvided> serviceProvided,
-			List<ServiceRequired> required) {
+			List<ServiceRequired> serviceRequired) {
 		this.name = name;
 		this.portProvided = portProvided;
 		this.portRequired = portRequired;
 		this.serviceProvided = serviceProvided;
-		Required = required;
+		this.serviceRequired = serviceRequired;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public List<PortProvided> getPortProvided() {
+		return portProvided;
+	}
+
+	public List<PortRequired> getPortRequired() {
+		return portRequired;
+	}
+
+	public List<ServiceProvided> getServiceProvided() {
+		return serviceProvided;
+	}
+
+	public List<ServiceRequired> getServiceRequired() {
+		return serviceRequired;
+	}
+	public abstract String callService(String nameService);
 	
+
 }

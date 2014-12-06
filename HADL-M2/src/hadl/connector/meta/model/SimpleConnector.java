@@ -1,10 +1,12 @@
 package hadl.connector.meta.model;
 
+import hadl.tools.interfaces.Observable;
+import hadl.tools.interfaces.Observer;
 
+public class SimpleConnector extends Connector implements Observable{
 
-public class SimpleConnector extends Connector {
-
-	Glue glue = new Glue();
+	private Glue glue;
+	
 	public SimpleConnector(String name, Glue glue) {
 		this.name = name;
 		this.glue = glue;
@@ -16,15 +18,15 @@ public class SimpleConnector extends Connector {
 		this.glue = glue;
 	}
 	@Override
-	public String caller() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean notifyObservers() {
+		return false;
 	}
-
 	@Override
-	public String callee() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean addObserver(Observer ob) {
+		return false;
 	}
-
+	@Override
+	public boolean deleteObserver(Observer ob) {
+		return false;
+	}
 }
