@@ -1,5 +1,6 @@
 package hadl.tools.interfaces;
 
+
 public interface Observer {
-	public String update();
+	public String update(Observable observable);
 }

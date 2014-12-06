@@ -8,10 +8,14 @@ import hadl.interfaces.meta.model.PortProvided;
 import hadl.interfaces.meta.model.PortRequired;
 import hadl.interfaces.meta.model.ServiceProvided;
 import hadl.interfaces.meta.model.ServiceRequired;
+import hadl.tools.interfaces.Observable;
+import hadl.tools.interfaces.Observer;
 
 
-public class Configuration extends Component{
-
+public class Configuration extends Component implements Observable{
+	
+	List<Observer> listObservable = new ArrayList<Observer>();
+	
 	public Configuration(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
 			List<ServiceProvided> serviceProvided,
@@ -48,6 +52,24 @@ public class Configuration extends Component{
 	@Override
 	public String callService(String nameService) {
 		return null;
+	}
+
+	@Override
+	public boolean notifyObservers() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean addObserver(Observer ob) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteObserver(Observer ob) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
