@@ -1,7 +1,9 @@
 package hadl.link.meta.model;
 
-public class Attachement extends Link {
+import hadl.utils.meta.model.Pair;
 
+public class Attachement extends Link {
+	Pair interfaces;
 	public Attachement(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
