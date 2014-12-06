@@ -1,7 +1,7 @@
 package hadl.tools.interfaces;
 
 public interface Observable {
-	public boolean notifyObservers();
-	public boolean addObserver(Observer ob);
-	public boolean deleteObserver(Observer ob);
+	public void notifyObservers();
+	public void addObserver(Observer ob);
+	public void deleteObserver(Observer ob);
 }
