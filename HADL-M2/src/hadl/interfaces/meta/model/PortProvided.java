@@ -1,5 +1,7 @@
 package hadl.interfaces.meta.model;
 
+import hadl.tools.interfaces.Observer;
+
 public class PortProvided extends Port{
 
 	@Override
@@ -12,6 +14,24 @@ public class PortProvided extends Port{
 	public String receive() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public boolean notifyObservers() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean addObserver(Observer ob) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteObserver(Observer ob) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 }
