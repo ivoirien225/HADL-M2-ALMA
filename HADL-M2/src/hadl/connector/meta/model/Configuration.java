@@ -3,8 +3,10 @@ package hadl.connector.meta.model;
 import java.util.ArrayList;
 import java.util.List;
 import hadl.connector.meta.model.Connector;
+import hadl.tools.interfaces.Observable;
+import hadl.tools.interfaces.Observer;
 
-public class Configuration extends Connector {
+public class Configuration extends Connector implements Observable{
 	
 	List<Connector> listConnector = new ArrayList<Connector>();
 	
@@ -25,14 +27,17 @@ public class Configuration extends Connector {
 	}
 
 	@Override
-	public String caller() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean notifyObservers() {
+		return false;
 	}
 
 	@Override
-	public String callee() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean addObserver(Observer ob) {
+		return false;
+	}
+
+	@Override
+	public boolean deleteObserver(Observer ob) {
+		return false;
 	}
 }

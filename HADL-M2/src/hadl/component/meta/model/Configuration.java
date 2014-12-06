@@ -48,7 +48,11 @@ public class Configuration extends Component implements Observer{
 
 	@Override
 	public String update() {
-		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String callService(String nameService) {
 		return null;
 	}
 
