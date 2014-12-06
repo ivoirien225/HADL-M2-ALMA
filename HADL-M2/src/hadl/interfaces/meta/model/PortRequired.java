@@ -1,8 +1,9 @@
 package hadl.interfaces.meta.model;
 
+import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 
-public class PortRequired extends Port{
+public class PortRequired extends Port  implements Observable{
 
 	@Override
 	public String send() {

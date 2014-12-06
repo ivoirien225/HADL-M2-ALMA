@@ -11,11 +11,13 @@ public class Role_Provide extends Role {
 
 	@Override
 	public boolean addObserver(Observer ob) {
+		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean deleteObserver(Observer ob) {
+		// TODO Auto-generated method stub
 		return false;
 	}
 
