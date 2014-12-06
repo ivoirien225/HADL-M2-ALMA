@@ -4,79 +4,40 @@ import hadl.interfaces.meta.model.PortProvided;
 import hadl.interfaces.meta.model.PortRequired;
 import hadl.interfaces.meta.model.ServiceProvided;
 import hadl.interfaces.meta.model.ServiceRequired;
+import hadl.tools.interfaces.Observable;
+import hadl.tools.interfaces.Observer;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
-public class SimpleComponent extends Component{
-	
-	List<PortProvided> portProvided = new ArrayList<PortProvided>();
-	List<PortRequired> portRequired = new ArrayList<PortRequired>();
-	List<ServiceProvided> serviceProvided = new ArrayList<ServiceProvided>();
-	List<ServiceRequired> serviceRequired = new ArrayList<ServiceRequired>();
-	
-	public SimpleComponent() {
-	}
+public class SimpleComponent extends Component implements Observable{
 
 	public SimpleComponent(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
 			List<ServiceProvided> serviceProvided,
-			List<ServiceRequired> serviceRequired) {
-		this.name = name;
-		this.portProvided = portProvided;
-		this.portRequired = portRequired;
-		this.serviceProvided = serviceProvided;
-		this.serviceRequired = serviceRequired;
-	}
-
-	public List<PortProvided> getPortProvided() {
-		return portProvided;
-	}
-
-	public void setPortProvided(List<PortProvided> portProvided) {
-		this.portProvided = portProvided;
-	}
-
-	public List<PortRequired> getPortRequired() {
-		return portRequired;
-	}
-
-	public void setPortRequired(List<PortRequired> portRequired) {
-		this.portRequired = portRequired;
-	}
-
-	public List<ServiceProvided> getServiceProvided() {
-		return serviceProvided;
-	}
-
-	public void setServiceProvided(List<ServiceProvided> serviceProvided) {
-		this.serviceProvided = serviceProvided;
-	}
-
-	public List<ServiceRequired> getServiceRequired() {
-		return serviceRequired;
-	}
-
-	public void setServiceRequired(List<ServiceRequired> serviceRequired) {
-		this.serviceRequired = serviceRequired;
-	}
-
-	public String getName() {
-		return name;
+			List<ServiceRequired> required) {
+		super(name, portProvided, portRequired, serviceProvided, required);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public String sendMessage() {
+	public boolean notifyObservers() {
 		// TODO Auto-generated method stub
-		return null;
+		return false;
 	}
 
 	@Override
-	public String receiveMessage() {
+	public boolean addObserver(Observer ob) {
 		// TODO Auto-generated method stub
-		return null;
+		return false;
 	}
+
+	@Override
+	public boolean deleteObserver(Observer ob) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 	
-	
+
 }
