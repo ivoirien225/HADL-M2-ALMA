@@ -2,8 +2,8 @@ package hadl.utils.meta.model;
 
 public class Pair {
 	
-	Object firstObject;
-	Object secondObject;
+	private Object firstObject;
+	private Object secondObject;
 	
 	public Pair(Object firstObject, Object secondObject) {
 		this.firstObject = firstObject;
@@ -26,17 +26,16 @@ public class Pair {
 	/**Permit to obtain object associated to a object.
 	 * To achieve this the methode need to the object couple.
 	 * 
-	 * @param obj 
-	 * @param couple Containing the object associated to obj 
-	 * @return The associated object of obj
+	 * @param obj Id to find its associated object 
+	 * * @return The associated object of obj
 	 */
-	public static Object get(Object obj , Pair couple){
+	public Object get(Object obj){
 		
-		if(couple.firstObject.equals(obj)){
-			return couple.secondObject;
+		if(this.firstObject.equals(obj)){
+			return this.secondObject;
 		}
 		else {
-			return couple.firstObject;
+			return this.firstObject;
 		}
 		
 	}
