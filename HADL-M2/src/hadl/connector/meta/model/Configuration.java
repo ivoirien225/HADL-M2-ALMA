@@ -5,8 +5,6 @@ import java.util.List;
 import hadl.connector.meta.model.Connector;
 import hadl.interfaces.meta.model.Role_Provide;
 import hadl.interfaces.meta.model.Role_Required;
-import hadl.tools.interfaces.Observable;
-import hadl.tools.interfaces.Observer;
 
 public class Configuration extends Connector{
 	
