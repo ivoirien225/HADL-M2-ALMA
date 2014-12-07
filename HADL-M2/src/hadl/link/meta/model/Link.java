@@ -1,6 +1,6 @@
 package hadl.link.meta.model;
 
-abstract class Link {
+public abstract class Link {
 	private String name;
 
 	public String getName() {
