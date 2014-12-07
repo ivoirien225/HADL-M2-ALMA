@@ -1,16 +1,16 @@
 package hadl.connector.meta.model;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 import hadl.utils.meta.model.Pair;
 
 public class Glue{
 	
-	Map<String,Pair> pairMap = new HashMap<String, Pair>(); 
-	
-	public Glue(Map<String,Pair> pairMap) {
-		this.pairMap = pairMap;
+	List<Pair> pairList = new ArrayList<Pair>();
+	public Glue(List<Pair> pairList) {
+		super();
+		this.pairList = pairList;
 	}
-
+	
 }
