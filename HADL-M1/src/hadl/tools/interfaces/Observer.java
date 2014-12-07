@@ -1,6 +1,8 @@
 package hadl.tools.interfaces;
 
+import hadl.tools.message.Message;
+
 
 public interface Observer {
-	public void update(String nameComponent,String operation, Object parameters);
+	public void update(Observable observable, Message message);
 }
