@@ -2,31 +2,26 @@ package hadl.component.meta.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import hadl.connector.meta.model.Connector;
 import hadl.interfaces.meta.model.PortProvided;
 import hadl.interfaces.meta.model.PortRequired;
 import hadl.interfaces.meta.model.ServiceProvided;
 import hadl.interfaces.meta.model.ServiceRequired;
-import hadl.tools.interfaces.Observable;
-import hadl.tools.interfaces.Observer;
+import hadl.link.meta.model.Link;
 
-
-public class Configuration extends Component implements Observable{
+public class Configuration extends Component{
 	
-	List<Observer> listObservable = new ArrayList<Observer>();
-	
+	List<Link> listLink = new ArrayList<Link>();
 	public Configuration(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
 			List<ServiceProvided> serviceProvided,
-			List<ServiceRequired> required,
+			List<ServiceRequired> serviceRequired,
 			List<Connector> listConnector,
-			List<Component> listComponent) {
-		super(name, portProvided, portRequired, serviceProvided, required);
+			List<Component> listComponent, List<Link> listLink){
+		super(name, portProvided, portRequired, serviceProvided, serviceRequired);
 		this.listComponent = listComponent;
 		this.listConnector = listConnector;
-				
-		// TODO Auto-generated constructor stub
+		this.listLink = listLink;
 	}
 
 	private List<Connector> listConnector = new ArrayList<Connector>();
@@ -48,28 +43,12 @@ public class Configuration extends Component implements Observable{
 	public void setListComponent(List<Component> listComponent) {
 		this.listComponent = listComponent;
 	}
-
-	@Override
-	public String callService(String nameService) {
-		return null;
+	
+	public List<Link> getAttachement() {
+		return this.listLink;
 	}
 
-	@Override
-	public boolean notifyObservers() {
-		// TODO Auto-generated method stub
-		return false;
+	public void setAttachement(List<Link> listLink) {
+		this.listLink = listLink;
 	}
-
-	@Override
-	public boolean addObserver(Observer ob) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean deleteObserver(Observer ob) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
 }

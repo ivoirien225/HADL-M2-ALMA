@@ -48,7 +48,4 @@ public abstract class Component{
 	public List<ServiceRequired> getServiceRequired() {
 		return serviceRequired;
 	}
-	public abstract String callService(String nameService);
-	
-
 }
