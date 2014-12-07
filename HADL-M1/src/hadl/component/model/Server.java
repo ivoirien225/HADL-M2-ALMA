@@ -12,7 +12,7 @@ import hadl.interfaces.meta.model.ServiceRequired;
 import hadl.link.meta.model.Link;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
-import hadl.tools.message.Message;
+import hadl.utils.Message;
 
 public class Server extends Configuration implements Observer, Observable{
 

@@ -3,7 +3,7 @@ package hadl.interfaces.model;
 import hadl.interfaces.meta.model.Role_Provide;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
-import hadl.tools.message.Message;
+import hadl.utils.Message;
 
 public class RoleProvidedM extends Role_Provide implements Observable, Observer{
 

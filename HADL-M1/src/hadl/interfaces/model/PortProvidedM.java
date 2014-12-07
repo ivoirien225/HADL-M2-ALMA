@@ -7,7 +7,7 @@ import hadl.component.model.Server;
 import hadl.interfaces.meta.model.PortProvided;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
-import hadl.tools.message.Message;
+import hadl.utils.Message;
 
 public class PortProvidedM extends PortProvided implements Observable, Observer {
 

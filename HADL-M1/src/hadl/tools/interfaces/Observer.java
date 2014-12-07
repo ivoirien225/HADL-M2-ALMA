@@ -1,6 +1,8 @@
 package hadl.tools.interfaces;
 
-import hadl.tools.message.Message;
+import hadl.utils.Message;
+
+
 
 
 public interface Observer {

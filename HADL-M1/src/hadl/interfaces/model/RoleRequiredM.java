@@ -3,7 +3,7 @@ package hadl.interfaces.model;
 import hadl.interfaces.meta.model.Role_Required;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
-import hadl.tools.message.Message;
+import hadl.utils.Message;
 
 public class RoleRequiredM extends Role_Required implements Observable, Observer{
 
