@@ -2,6 +2,7 @@ package hadl.connector.meta.model;
 
 import java.util.HashMap;
 import java.util.Map;
+
 import hadl.utils.meta.model.Pair;
 
 public class Glue{
@@ -11,4 +12,5 @@ public class Glue{
 	public Glue(Map<String,Pair> pairMap) {
 		this.pairMap = pairMap;
 	}
+
 }
