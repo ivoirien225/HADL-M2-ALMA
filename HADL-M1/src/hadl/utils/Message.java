@@ -1,4 +1,4 @@
-package hadl.tools.message;
+package hadl.utils;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
