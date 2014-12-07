@@ -5,7 +5,7 @@ import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 import hadl.tools.message.Message;
 
-public class RoleProvidedM extends Role_Provide implements Observable,Observer{
+public class RoleProvidedM extends Role_Provide implements Observable, Observer{
 
 	public RoleProvidedM(String name) {
 		super(name);

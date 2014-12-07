@@ -7,7 +7,7 @@ import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 import hadl.tools.message.Message;
 
-public class PortRequiredM extends PortRequired implements Observable,Observer{
+public class PortRequiredM extends PortRequired implements Observable, Observer{
 
 	List<Observer> observers;
 	

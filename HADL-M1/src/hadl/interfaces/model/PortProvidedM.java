@@ -5,7 +5,7 @@ import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 import hadl.tools.message.Message;
 
-public class PortProvidedM extends PortProvided implements Observable,Observer {
+public class PortProvidedM extends PortProvided implements Observable, Observer {
 
 	public PortProvidedM(String name) {
 		super(name);
