@@ -44,27 +44,34 @@ public class Server extends Configuration implements Observer, Observable{
 	@Override
 	public void update(Observable observable, Message message) {
 		// TODO Auto-generated method stub
+		System.out.println("[INFO] "+this.getName()+" In method update.");
+		System.out.println("[INFO] "+this.getName()+" Message Received: "+message+".");
+		System.out.println("[INFO] "+this.getName()+" Call method notifyObserver.");
 		notifyObservers(observable, message);
 	}
 
 	@Override
 	public void notifyObservers(Observable observable, Message message) {
 		// TODO Auto-generated method stub
+		System.out.println("[INFO] "+this.getName()+" In method notifyObserver.");
+		
 		Observer toNotify=null;
+		
 		for(Observer ob : observers){
-			
+			System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find observers.");	
 			if(ob.equals((Observer)observable)){
 				//Search the corresponding element of the current object in 
 				//the list of link of the configuration
 				for(Link l : getListLink()){
-					
+					System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find the associated interfaces of observer found.");
 					toNotify=(Observer)l.getInterfaces().get(ob);
 				}
+				System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find the associated interfaces of observer found.");
 			}
 		}
+		System.out.println("[INFO] "+this.getName()+" In method notifyObserver :Out cycle.");	
+		System.out.println("[INFO] "+this.getName()+" Call method update of other interface asscociated method notifyObserver.");
 		toNotify.update(this, message);		
 	}
-
-	
 
 }
