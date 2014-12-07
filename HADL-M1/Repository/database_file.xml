@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Document created by: Pierre&Yannis, ALMA2 with XmlGrid Online XML Editor, http://xmlgrid.net -->
+<database>
+        <client>
+            <name>Yannis</name>
+            <commandeId>1</commandeId>
+            <etat>reçu</etat>
+        </client>
+        <commande>
+            <commandeId>1</commandeId>
+            <produit>
+                  <name>Sony Xperia 4</name>
+                  <description>Telephone portable 4G</description>
+            </produit>
+         </commande>
+</database>
