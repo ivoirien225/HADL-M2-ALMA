@@ -11,6 +11,14 @@ import hadl.link.meta.model.Link;
 
 public class Configuration extends Component{
 	
+	public List<Link> getListLink() {
+		return listLink;
+	}
+
+	public void setListLink(List<Link> listLink) {
+		this.listLink = listLink;
+	}
+
 	List<Link> listLink = new ArrayList<Link>();
 	public Configuration(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
