@@ -23,4 +23,14 @@ public class Produit {
 	public String toString() {
 		return "Produit [name=" + name + ", description=" + description + "]";
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+	
+	
 }

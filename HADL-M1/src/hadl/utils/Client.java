@@ -26,6 +26,15 @@ public class Client {
 		return "Client [name=" + name + ", commandeId=" + commandeId
 				+ ", etat=" + etat + "]";
 	}
+	public String getName() {
+		return name;
+	}
+	public int getCommandeId() {
+		return commandeId;
+	}
+	public String getEtat() {
+		return etat;
+	}
 	
 	
 }

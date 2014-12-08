@@ -22,5 +22,11 @@ public class Commande {
 	public String toString() {
 		return "Commande [commandeId=" + commandeId + " " + produit.toString()+"]";
 	}
+	public int getCommandeId() {
+		return commandeId;
+	}
+	public Produit getProduit() {
+		return produit;
+	}
 	
 }

@@ -20,4 +20,10 @@ public class Database {
 		return "Database "+client.toString()+ " " +commande.toString()+"]";
 	}
 	
+	public Client getClient() {
+		return client;
+	}
+	public Commande getCommande() {
+		return commande;
+	}
 }
