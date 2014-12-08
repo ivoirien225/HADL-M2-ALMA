@@ -27,9 +27,9 @@ public class Client extends SimpleComponent implements Observable, Observer{
 	@Override
 	public void update(Observable observable, Message message){
 		if(observable instanceof PortRequired){
-			this.response = message;
-			afficheReponse(message);
 			try {
+				this.response = message;
+				afficheReponse(message);
 				Logger.loggerWritter(this, "update", message);
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -74,6 +74,6 @@ public class Client extends SimpleComponent implements Observable, Observer{
 	}
 	
 	public void afficheReponse(Message response){
-		System.out.println("La reponse � la requ�te "+response.getName()+" est: "+response.getName()+response.getResponse());	
+		System.out.println("La reponse a la requete "+response.getName()+" est: "+response.getName()+response.getResponse());	
 	}
 }

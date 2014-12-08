@@ -1,3 +1,2 @@
-[INFOS] -- Element name: 
-[INFOS] -- Element name: 
-[INFOS] -- Element name: 
+-------LOG OF COMMUNICATIONS-------
+	   *********************
