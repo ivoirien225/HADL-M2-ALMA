@@ -45,12 +45,11 @@ public class SimpleConnectorOO extends SimpleConnector implements Observable,
 			notifyObservers(observable, message);
 			Logger.loggerWritter(this, "update", message);
 		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		try {
-			Logger.loggerExceptionWritter(this, "update", message);
-		} catch (IOException e) {
-			e.printStackTrace();
+			try {
+				Logger.loggerExceptionWritter(this, "update", message);
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
 		}
 	}
 

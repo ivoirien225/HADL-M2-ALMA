@@ -71,7 +71,17 @@ public class PortRequiredM extends PortRequired implements Observable, Observer{
 
 	@Override
 	public void update(Observable observable, Message message) {
-		notifyObservers(observable, message);
+		try{
+			notifyObservers(observable, message);
+			Logger.loggerWritter(this, "update", message);
+		}catch(Exception e){
+			try {
+				Logger.loggerExceptionWritter(this, "update", message);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
+		
 	}
 
 }
