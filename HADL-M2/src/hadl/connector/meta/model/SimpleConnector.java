@@ -13,7 +13,7 @@ public class SimpleConnector extends Connector {
 		this.glue = glue;
 	}
 
-	private Glue glue;
+	protected Glue glue;
 
 	public Glue getGlue() {
 		return glue;
