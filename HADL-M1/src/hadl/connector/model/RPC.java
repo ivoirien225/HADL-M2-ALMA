@@ -11,7 +11,6 @@ public class RPC extends SimpleConnectorOO{
 	public RPC(String name, List<Role_Provide> listRole_Provide,
 			List<Role_Required> listRole_Required, Glue glue) {
 		super(name, listRole_Provide, listRole_Required, glue);
-		// TODO Auto-generated constructor stub
 	}
 
 }
