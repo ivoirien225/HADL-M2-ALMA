@@ -1,24 +1,30 @@
-package hadl.interfaces.model;
+package hadl.connector.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import hadl.component.meta.model.Configuration;
 import hadl.component.meta.model.SimpleComponent;
-import hadl.interfaces.meta.model.PortRequired;
+import hadl.connector.meta.model.Glue;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 import hadl.utils.Message;
+import hadl.utils.meta.model.Pair;
 
-public class PortRequiredM extends PortRequired implements Observable, Observer{
+public class GlueOO extends Glue implements Observable, Observer {
 
-	public List<Observer> observers = new ArrayList<Observer>();
-	
-	public PortRequiredM(String name) {
-		super(name);
+
+	public List<Observer> getObservers() {
+		return observers;
+	}
+
+	public GlueOO(String nameS, List<Pair> pairList) {
+		super(nameS, pairList);
 		// TODO Auto-generated constructor stub
 	}
 
+	public List<Observer> observers = new ArrayList<Observer>();
+	
 	@Override
 	public void notifyObservers(Observable observable, Message message) {
 		// TODO Auto-generated method stub
@@ -57,7 +63,7 @@ public class PortRequiredM extends PortRequired implements Observable, Observer{
 	@Override
 	public void addObserver(Observer ob) {
 		// TODO Auto-generated method stub
-		System.out.println("[INFO]"+this.name+" In addObserver");
+		System.out.println("[INFO]"+this.getName()+" In addObserver");
 		observers.add(ob);
 	}
 

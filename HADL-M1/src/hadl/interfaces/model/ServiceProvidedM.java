@@ -5,20 +5,20 @@ import java.util.List;
 
 import hadl.component.meta.model.Configuration;
 import hadl.component.meta.model.SimpleComponent;
-import hadl.interfaces.meta.model.PortRequired;
+import hadl.interfaces.meta.model.ServiceProvided;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 import hadl.utils.Message;
 
-public class PortRequiredM extends PortRequired implements Observable, Observer{
+public class ServiceProvidedM extends ServiceProvided implements Observable, Observer{
 
 	public List<Observer> observers = new ArrayList<Observer>();
 	
-	public PortRequiredM(String name) {
+	public ServiceProvidedM(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	@Override
 	public void notifyObservers(Observable observable, Message message) {
 		// TODO Auto-generated method stub
@@ -75,5 +75,5 @@ public class PortRequiredM extends PortRequired implements Observable, Observer{
 		System.out.println("[INFO] "+this.getName()+" Call method notifyObserver.");
 		notifyObservers(observable, message);
 	}
-
+	
 }
