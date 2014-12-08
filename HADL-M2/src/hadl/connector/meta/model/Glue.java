@@ -7,20 +7,20 @@ import hadl.utils.meta.model.Pair;
 
 public class Glue {
 	
-	public String getNameS() {
-		return nameS;
+	public String getName() {
+		return name;
 	}
 
 	public List<Pair> getPairList() {
 		return pairList;
 	}
 
-	String nameS = ""; 
+	String name = ""; 
 	List<Pair> pairList = new ArrayList<Pair>();
 	
-	public Glue(String nameS, List<Pair> pairList) {
+	public Glue(String name, List<Pair> pairList) {
 		super();
-		this.nameS = nameS;
+		this.name = name;
 		this.pairList = pairList;
 	}
 	
