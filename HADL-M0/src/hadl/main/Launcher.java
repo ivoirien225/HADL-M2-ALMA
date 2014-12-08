@@ -6,12 +6,17 @@ import java.util.List;
 
 import hadl.component.model.Client;
 import hadl.component.model.ConnectionManager;
+import hadl.component.model.DataBase;
 import hadl.component.model.GlobalConfig;
 import hadl.component.model.Server;
 import hadl.interfaces.meta.model.PortProvided;
 import hadl.interfaces.meta.model.PortRequired;
+import hadl.interfaces.meta.model.ServiceProvided;
+import hadl.interfaces.meta.model.ServiceRequired;
 import hadl.interfaces.model.PortProvidedM;
 import hadl.interfaces.model.PortRequiredM;
+import hadl.interfaces.model.ServiceProvidedM;
+import hadl.interfaces.model.ServiceRequiredM;
 import hadl.link.meta.model.Binding;
 import hadl.link.meta.model.Link;
 import hadl.tools.interfaces.Observer;
@@ -95,22 +100,27 @@ public class Launcher {
 		
 		
 		/////////////////////////////Databases////////////////////////////////////
-		List<String> list = new ArrayList<String>();
-		list.add("Client");
-		list.add("commandeId");
-		list.add("Yannis");
-		
-		PortProvidedM pp = new PortProvidedM("portBase");
+		List<PortProvided> listPortProvided = new ArrayList<PortProvided>();
+		PortProvidedM portProvided = new PortProvidedM("port fourni BD");
+		listPortProvided.add(portProvided);
 
-		List<PortProvided> listpp = new ArrayList<PortProvided>();
-		listpp.add(pp);
 
-		PortRequiredM pr = new PortRequiredM("portBase");
-		List<PortRequired> listpr = new ArrayList<PortRequired>();
-		listpr.add(pr);
+		List<PortRequired> listportRequired = new ArrayList<PortRequired>();
+		PortRequiredM portRequired = new PortRequiredM("port requis BD");
+		listportRequired.add(portRequired);
 
-		DataBase database = new DataBase("db", listpp, listpr, null, listsr);
-		database.listObserver.add(pp);
+
+		List<ServiceProvided> listserviceProvided = new ArrayList<ServiceProvided>();
+		ServiceProvidedM serviceProvided = new ServiceProvidedM("service fourni BD");
+		listserviceProvided.add(serviceProvided);
+
+		List<ServiceRequired> listServiceRequired = new ArrayList<ServiceRequired>();
+		ServiceRequiredM serviceRequired = new ServiceRequiredM("service requis BD");
+		listServiceRequired.add(serviceRequired);
+
+		List<String> route;
+
+		DataBase database = new DataBase("HADL", listPortProvided, listportRequired, listserviceProvided, listServiceRequired);
 
 		//adding database to port observer
 		pp.addObserver(database);
