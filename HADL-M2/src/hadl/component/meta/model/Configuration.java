@@ -10,7 +10,11 @@ import hadl.interfaces.meta.model.ServiceRequired;
 import hadl.link.meta.model.Link;
 
 public class Configuration extends Component{
-	
+
+	private List<Connector> listConnector = new ArrayList<Connector>();
+	private List<Component> listComponent = new ArrayList<Component>();
+
+
 	public List<Link> getListLink() {
 		return listLink;
 	}
@@ -31,10 +35,6 @@ public class Configuration extends Component{
 		this.listConnector = listConnector;
 		this.listLink = listLink;
 	}
-
-	private List<Connector> listConnector = new ArrayList<Connector>();
-	private List<Component> listComponent = new ArrayList<Component>();
-
 
 	public List<Connector> getListConnector() {
 		return listConnector;

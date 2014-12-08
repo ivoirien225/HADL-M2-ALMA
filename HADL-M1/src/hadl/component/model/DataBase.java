@@ -20,8 +20,8 @@ import javax.xml.bind.Unmarshaller;
 
 
 public class DataBase extends SimpleComponent implements Observable, Observer{
-	List<Observer> listObserver = new ArrayList<Observer>();
-	Message message;
+	public List<Observer> listObserver = new ArrayList<Observer>();
+	public Message message;
 	public DataBase(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
 			List<ServiceProvided> serviceProvided,

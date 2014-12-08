@@ -64,7 +64,6 @@ public class Client extends SimpleComponent implements Observable, Observer{
 
 	@Override
 	public void addObserver(Observer ob) {
-		System.out.println("[INFO]"+this.getName()+" In addObserver");
 		this.listObserver.add(ob);
 	}
 
