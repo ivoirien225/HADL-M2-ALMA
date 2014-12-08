@@ -1,6 +1,8 @@
 package hadl.component.model;
 
+import java.util.ArrayList;
 import java.util.List;
+
 import hadl.component.meta.model.SimpleComponent;
 import hadl.interfaces.meta.model.PortProvided;
 import hadl.interfaces.meta.model.PortRequired;
@@ -12,7 +14,7 @@ import hadl.utils.Message;
 
 public class Client extends SimpleComponent implements Observable, Observer{
 	
-	List<Observer> listObserver;
+	List<Observer> listObserver = new ArrayList<Observer>();
 	Message  response; 
 	public Client(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
@@ -51,10 +53,10 @@ public class Client extends SimpleComponent implements Observable, Observer{
 	}
 	
 	public void afficheReponse(Message response){
-		System.out.println("La reponse à la requête "+response.getName()+" est: "+response.getName()+response.getResponse());	
+		System.out.println("La reponse ï¿½ la requï¿½te "+response.getName()+" est: "+response.getName()+response.getResponse());	
 	}
 	
 	public void logExceptionOnConsol(String methode){
-		System.out.println("Erreur à l'appel de la méthode :"+methode);
+		System.out.println("Erreur ï¿½ l'appel de la mï¿½thode :"+methode);
 	}
 }
