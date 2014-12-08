@@ -1,5 +1,8 @@
 package hadl.utils.meta.model;
 
+import hadl.interfaces.meta.model.PortProvided;
+
+
 public class Pair {
 	
 	private Object firstObject;
@@ -31,12 +34,22 @@ public class Pair {
 	 */
 	public Object get(Object obj){
 		
-		if(this.firstObject.equals(obj)){
-			return this.secondObject;
+		if(this.getFirstObject().equals(obj)){
+			return this.getSecondObject();
 		}
 		else {
-			return this.firstObject;
+			return this.getFirstObject();
 		}
 		
+	}
+	
+	public static void main(String[] args) {
+		PortProvided server = new PortProvided("serverPortProvided");
+		PortProvided connectionManager = new PortProvided("connectionManagerPort");
+		//Pair interfaces = new Pair(server,connectionManager);
+		Pair interfaces = new Pair(connectionManager,server);
+		
+		System.out.println(interfaces.get(server));
+		System.out.println(interfaces.get(connectionManager));
 	}
 }
