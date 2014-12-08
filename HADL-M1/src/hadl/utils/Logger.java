@@ -23,6 +23,28 @@ public class Logger {
 		return res.toString();
 	}
 	
+	public static void loggerExceptionWritter(Component component, String methodName,  Message message) throws IOException {
+		System.out.println("[INFOS]**[EXCEPTION] -- Element name: " + component.getClass().getSimpleName() + "Method called: "+ methodName + " " + " Message type: " + message.getName() + " "+ "Message result: " + message.response);
+		String chaine = loggerReader();
+		FileWriter writer = new FileWriter(new File("Repository/log.txt"));
+		if(!(chaine.equals(null))){
+			chaine = chaine + "[INFOS] -- Element name: " + component.getClass().getSimpleName() + "Method called: "+ methodName + " " + " Message type: " + message.getName() + " "+ "Message result: " + message.response; 
+		}
+		writer.write(chaine);
+		writer.close();
+	}
+	
+	public static void loggerExceptionWritter(Interface interfaceCom, String methodName, Message message) throws IOException {
+		System.out.println("[INFOS]**[EXCEPTION] -- Element name: " + interfaceCom.getClass().getSimpleName() + "Method called: "+ methodName + " " + " Message type: " + message.getName() + " "+ "Message result: " + message.response);
+		String chaine = loggerReader();
+		FileWriter writer = new FileWriter(new File("Repository/log.txt"));
+		if(!(chaine.equals(null))){
+			chaine = chaine + "[INFOS] -- Element name: " + interfaceCom.getClass().getSimpleName() + "Method called: "+ methodName + " " + " Message type: " + message.getName() + " "+ "Message result: " + message.response; 
+		}
+		writer.write(chaine);
+		writer.close();
+	}
+	
 	public static void loggerWritter(Interface interfaceCom, String methodName, Message message) throws IOException {
 		System.out.println("[INFOS] -- Element name: " + interfaceCom.getClass().getSimpleName() + "Method called: "+ methodName + " " + " Message type: " + message.getName() + " "+ "Message result: " + message.response);
 		String chaine = loggerReader();
