@@ -2,14 +2,20 @@ package hadl.interfaces.model;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import hadl.component.meta.model.Configuration;
 import hadl.connector.meta.model.Glue;
+import hadl.connector.meta.model.SimpleConnector;
 import hadl.interfaces.meta.model.Role_Required;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 import hadl.utils.Message;
 
 public class RoleRequiredM extends Role_Required implements Observable, Observer{
+
+	public List<Observer> getObservers() {
+		return observers;
+	}
 
 	public List<Observer> observers = new ArrayList<Observer>();
 	
@@ -22,8 +28,8 @@ public class RoleRequiredM extends Role_Required implements Observable, Observer
 	public void notifyObservers(Observable observable, Message message) {
 		// TODO Auto-generated method stub
 		System.out.println("[INFO] "+this.getName()+" In method notifyObservers.");
-		if(observable instanceof Glue ){
-			System.out.println("[INFO] "+this.getName()+" The Sender of notification is a simple component.");
+		if(observable instanceof SimpleConnector ){
+			System.out.println("[INFO] "+this.getName()+" The Sender of notification is a simple connector.");
 			for(Observer ob: observers){
 				System.out.println("[INFO] "+this.getName()+" Searching of the configuration reference to transmit him the message.");
 				if(ob instanceof Configuration){
@@ -37,12 +43,12 @@ public class RoleRequiredM extends Role_Required implements Observable, Observer
 		}else{
 			
 				if(observable instanceof Configuration ){
-					System.out.println("[INFO] "+this.getName()+" The Sender of notification is a simple component.");
+					System.out.println("[INFO] "+this.getName()+" The Sender of notification is a configuration.");
 					for(Observer ob: observers){
-						System.out.println("[INFO] "+this.getName()+"Searching of the glue reference to transmit him the message.");
-						if(ob instanceof Glue){
-							System.out.println("[INFO] "+this.getName()+" Simple component found.");
-							System.out.println("[INFO] "+this.getName()+" Notification send to Simple component.");
+						System.out.println("[INFO] "+this.getName()+" Searching of the simple connector reference to transmit him the message.");
+						if(ob instanceof SimpleConnector){
+							System.out.println("[INFO] "+this.getName()+" Simple connector found.");
+							System.out.println("[INFO] "+this.getName()+" Notification send to simple connector.");
 							//ob.update(this, message); //!!!!!!!!!!!!A MODIFIER!!!!!!!!!!!
 							System.out.println("[INFO] Message Arrived"+message+"on port {"+this.getName()+"}");
 							break;
