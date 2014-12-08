@@ -1,5 +1,6 @@
 package hadl.component.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import hadl.component.meta.model.Component;
@@ -16,7 +17,7 @@ import hadl.utils.Message;
 
 public class Server extends Configuration implements Observer, Observable{
 
-	public List<Observer> observers;
+	public List<Observer> observers =  new ArrayList<Observer>();
 	
 	public Server(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
@@ -32,6 +33,7 @@ public class Server extends Configuration implements Observer, Observable{
 	@Override
 	public void addObserver(Observer ob) {
 		// TODO Auto-generated method stub
+		System.out.println("[INFO]"+this.getName()+" In addObserver");
 		observers.add(ob);
 	}
 
@@ -58,20 +60,23 @@ public class Server extends Configuration implements Observer, Observable{
 		Observer toNotify=null;
 		
 		for(Observer ob : observers){
-			System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find observers.");	
+			System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find the associated interface of interface which send the last notification to Configuration.");	
 			if(ob.equals((Observer)observable)){
 				//Search the corresponding element of the current object in 
 				//the list of link of the configuration
 				for(Link l : getListLink()){
 					System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find the associated interfaces of observer found.");
 					toNotify=(Observer)l.getInterfaces().get(ob);
+					break;
 				}
 				System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find the associated interfaces of observer found.");
 			}
+			
 		}
-		System.out.println("[INFO] "+this.getName()+" In method notifyObserver :Out cycle.");	
-		System.out.println("[INFO] "+this.getName()+" Call method update of other interface asscociated method notifyObserver.");
-		toNotify.update(this, message);		
+		System.out.println("[INFO] "+this.getName()+" In method notifyObserver :Out a cycle to find the associated interface of interface which send the last notification to Configuration.");
+	
+		System.out.println("[INFO] "+this.getName()+" Send the notification to interface associated of interface which send the last notification to Configuration..");
+		 toNotify.update(this, message);		
 	}
 
 }
