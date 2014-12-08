@@ -1,5 +1,6 @@
 package hadl.interfaces.model;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import hadl.component.meta.model.Configuration;
@@ -7,6 +8,7 @@ import hadl.component.meta.model.SimpleComponent;
 import hadl.interfaces.meta.model.PortProvided;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
+import hadl.utils.Logger;
 import hadl.utils.Message;
 
 public class PortProvidedM extends PortProvided implements Observable, Observer {
@@ -19,7 +21,16 @@ public class PortProvidedM extends PortProvided implements Observable, Observer 
 
 	@Override
 	public void update(Observable observable, Message message) {
-		notifyObservers(observable, message);
+		try{
+			notifyObservers(observable, message);
+			Logger.loggerWritter(this, "update", message);
+		}catch(Exception e){
+			try {
+				Logger.loggerExceptionWritter(this, "update", message);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
 	}
 
 	@Override
@@ -27,8 +38,16 @@ public class PortProvidedM extends PortProvided implements Observable, Observer 
 			if(observable instanceof SimpleComponent ){
 				for(Observer ob: observers){
 					if(ob instanceof Configuration){
-						ob.update(this, message);
-						break;
+						try{
+							Logger.loggerWritter(this, "notifyObservers", message);
+							ob.update(this, message);
+							break;
+						}catch(Exception e){
+							try {
+								Logger.loggerExceptionWritter(this, "notifyObservers", message);
+							} catch (IOException e1) {
+								e1.printStackTrace();
+							}						}
 					}
 				}
 				
@@ -36,8 +55,17 @@ public class PortProvidedM extends PortProvided implements Observable, Observer 
 					if(observable instanceof Configuration ){
 						for(Observer ob: observers){
 							if(ob instanceof SimpleComponent){
-								ob.update(this, message);
-								break;
+								try{
+									Logger.loggerWritter(this, "notifyObservers", message);
+									ob.update(this, message);
+									break;
+								}catch(Exception e){
+									try {
+										Logger.loggerExceptionWritter(this, "notifyObservers", message);
+									} catch (IOException e1) {
+										e1.printStackTrace();
+									}
+								}
 							}
 						}
 					}
