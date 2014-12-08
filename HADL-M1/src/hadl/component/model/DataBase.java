@@ -9,18 +9,16 @@ import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 import hadl.utils.Database;
 import hadl.utils.Message;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
 
 public class DataBase extends SimpleComponent implements Observable, Observer{
-	List<Observer> listObserver;
+	List<Observer> listObserver = new ArrayList<Observer>();
 	Message message;
 	public DataBase(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
@@ -33,9 +31,10 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 	
 
 	@Override
-	public void update(Observable observable, Message message) {
+	public void update(Observable observable, Message mes) {
 		if(observable instanceof PortProvided){
-			this.message = this.resolveRequest(message);
+			this.message = this.resolveRequest(mes);
+			notifyObservers(observable,this.message);
 		}
 	}
 	
@@ -78,33 +77,5 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 			}
 		}
 		return req;
-	}
-	public static void main(String[] args) {
-		List<String> list = new ArrayList<String>();
-		list.add("Client");
-		list.add("commandeId");
-		list.add("Yannis");
-		Message message = new Message("SELECT", list, true, "", null);
-		PortProvided pp = new PortProvided("portBase");
-		List<PortProvided> listpp = new ArrayList<PortProvided>();
-		listpp.add(pp);
-		
-		PortRequired pr = new PortRequired("portBase");
-		List<PortRequired> listpr = new ArrayList<PortRequired>();
-		listpr.add(pr);
-		
-		
-		ServiceRequired sr = new ServiceRequired();
-		List<ServiceRequired> listsr = new ArrayList<ServiceRequired>();
-		listsr.add(sr);
-		
-		
-		ServiceProvided sp = new ServiceProvided();
-		List<ServiceProvided> listsp = new ArrayList<ServiceProvided>();
-		listsp.add(sp);
-		
-		DataBase database = new DataBase("db", listpp, listpr, listsp, listsr);
-		database.listObserver.add((Observer)pr);
-		database.update(database,message);
 	}
 }
