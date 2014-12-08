@@ -58,9 +58,8 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 	public Message resolveRequest(Message req){
 		if(req.isRequest){
 			if(req.name.equals("SELECT")){
-				String table, valueRequested, constraint, result = null;
+				String table, constraint, result = null;
 				table = req.params.get(0);
-				valueRequested = req.params.get(1);
 				constraint = req.params.get(2);
 				try{
 					JAXBContext jaxbContext = JAXBContext.newInstance(Database.class);
