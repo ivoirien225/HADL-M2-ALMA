@@ -1,8 +1,8 @@
 package hadl.component.model;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import hadl.component.meta.model.Component;
 import hadl.component.meta.model.Configuration;
 import hadl.connector.meta.model.Connector;
@@ -13,6 +13,7 @@ import hadl.interfaces.meta.model.ServiceRequired;
 import hadl.link.meta.model.Link;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
+import hadl.utils.Logger;
 import hadl.utils.Message;
 
 public class Server extends Configuration implements Observer, Observable{
@@ -27,56 +28,55 @@ public class Server extends Configuration implements Observer, Observable{
 			List<Link> listLink) {
 		super(name, portProvided, portRequired, serviceProvided, serviceRequired,
 				listConnector, listComponent, listLink);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void addObserver(Observer ob) {
-		// TODO Auto-generated method stub
-		System.out.println("[INFO]"+this.getName()+" In addObserver");
 		observers.add(ob);
 	}
 
 	@Override
 	public void deleteObserver(Observer ob) {
-		// TODO Auto-generated method stub
 		observers.remove(ob);
 	}
 
 	@Override
 	public void update(Observable observable, Message message) {
-		// TODO Auto-generated method stub
-		System.out.println("[INFO] "+this.getName()+" In method update.");
-		System.out.println("[INFO] "+this.getName()+" Message Received: "+message+".");
-		System.out.println("[INFO] "+this.getName()+" Call method notifyObserver.");
-		notifyObservers(observable, message);
+		try{
+			notifyObservers(observable, message);
+			Logger.loggerWritter(this, "update", message);
+		}catch(Exception e){
+			try {
+				Logger.loggerExceptionWritter(this, "update", message);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
 	}
 
 	@Override
 	public void notifyObservers(Observable observable, Message message) {
-		// TODO Auto-generated method stub
-		System.out.println("[INFO] "+this.getName()+" In method notifyObserver.");
-		
-		Observer toNotify=null;
-		
+		Observer toNotify = null;
 		for(Observer ob : observers){
-			System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find the associated interface of interface which send the last notification to Configuration.");	
 			if(ob.equals((Observer)observable)){
 				//Search the corresponding element of the current object in 
 				//the list of link of the configuration
 				for(Link l : getListLink()){
-					System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find the associated interfaces of observer found.");
 					toNotify=(Observer)l.getInterfaces().get(ob);
 					break;
 				}
-				System.out.println("[INFO] "+this.getName()+" In method notifyObserver :In a cycle to find the associated interfaces of observer found.");
 			}
-			
 		}
-		System.out.println("[INFO] "+this.getName()+" In method notifyObserver :Out a cycle to find the associated interface of interface which send the last notification to Configuration.");
-	
-		System.out.println("[INFO] "+this.getName()+" Send the notification to interface associated of interface which send the last notification to Configuration..");
-		 toNotify.update(this, message);		
+		try{
+			toNotify.update(this, message);
+			Logger.loggerWritter(this, "notifyObservers", message);
+		}catch(Exception e){
+			try {
+				Logger.loggerExceptionWritter(this, "notifyObservers", message);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
 	}
 
 }

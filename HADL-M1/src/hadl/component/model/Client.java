@@ -1,8 +1,8 @@
 package hadl.component.model;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import hadl.component.meta.model.SimpleComponent;
 import hadl.interfaces.meta.model.PortProvided;
 import hadl.interfaces.meta.model.PortRequired;
@@ -10,6 +10,7 @@ import hadl.interfaces.meta.model.ServiceProvided;
 import hadl.interfaces.meta.model.ServiceRequired;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
+import hadl.utils.Logger;
 import hadl.utils.Message;
 
 public class Client extends SimpleComponent implements Observable, Observer{
@@ -28,9 +29,19 @@ public class Client extends SimpleComponent implements Observable, Observer{
 		if(observable instanceof PortRequired){
 			this.response = message;
 			afficheReponse(message);
+			try {
+				Logger.loggerWritter(this, "update", message);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 		else{
-			logExceptionOnConsol("update");
+			try {
+				Logger.loggerExceptionWritter(this, "update", message);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 	
@@ -38,7 +49,16 @@ public class Client extends SimpleComponent implements Observable, Observer{
 	@Override
 	public void notifyObservers(Observable observable, Message message) {
 		for(Observer o : listObserver){
-			o.update(this, message);
+		  try{
+			  o.update(this, message);
+			  Logger.loggerWritter(this, "notifyObservers", message); 
+		  }catch(Exception e){
+			  try {
+				Logger.loggerExceptionWritter(this, "notifyObservers", message);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		  }
 		}
 	}
 
@@ -55,9 +75,5 @@ public class Client extends SimpleComponent implements Observable, Observer{
 	
 	public void afficheReponse(Message response){
 		System.out.println("La reponse � la requ�te "+response.getName()+" est: "+response.getName()+response.getResponse());	
-	}
-	
-	public void logExceptionOnConsol(String methode){
-		System.out.println("Erreur � l'appel de la m�thode :"+methode);
 	}
 }

@@ -8,8 +8,10 @@ import hadl.interfaces.meta.model.ServiceRequired;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 import hadl.utils.Database;
+import hadl.utils.Logger;
 import hadl.utils.Message;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.JAXBContext;
@@ -28,20 +30,39 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 	}
 
 	public File baseFile = new File("Repository/database_file.xml");
-	
 
 	@Override
 	public void update(Observable observable, Message mes) {
 		if(observable instanceof PortProvided){
 			this.message = this.resolveRequest(mes);
 			notifyObservers(observable,this.message);
+			try {
+				Logger.loggerWritter(this, "update", message);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}else{
+			try {
+				Logger.loggerExceptionWritter(this, "update", message);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 	
 	@Override
 	public void notifyObservers(Observable observable, Message response) {
 		for(Observer o : this.listObserver){
+			try{
 			o.update(this, response);
+			Logger.loggerWritter(this, "notifyObservers", message);
+			}catch(Exception e){
+				try {
+					Logger.loggerExceptionWritter(this, "notifyObservers", message);
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+			}
 		}
 	}
 
