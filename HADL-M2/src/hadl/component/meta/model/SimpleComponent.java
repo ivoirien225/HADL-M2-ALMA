@@ -4,6 +4,7 @@ import hadl.interfaces.meta.model.PortProvided;
 import hadl.interfaces.meta.model.PortRequired;
 import hadl.interfaces.meta.model.ServiceProvided;
 import hadl.interfaces.meta.model.ServiceRequired;
+
 import java.util.List;
 
 
@@ -13,5 +14,9 @@ public class SimpleComponent extends Component{
 			List<ServiceProvided> serviceProvided,
 			List<ServiceRequired> required) {
 		super(name, portProvided, portRequired, serviceProvided, required);
+	}
+	
+	public SimpleComponent(String name) {
+		super(name);
 	}
 }

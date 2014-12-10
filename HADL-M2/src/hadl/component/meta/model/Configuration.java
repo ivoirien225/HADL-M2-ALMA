@@ -13,17 +13,8 @@ public class Configuration extends Component{
 
 	private List<Connector> listConnector = new ArrayList<Connector>();
 	private List<Component> listComponent = new ArrayList<Component>();
-
-
-	public List<Link> getListLink() {
-		return listLink;
-	}
-
-	public void setListLink(List<Link> listLink) {
-		this.listLink = listLink;
-	}
-
 	List<Link> listLink = new ArrayList<Link>();
+
 	public Configuration(String name, List<PortProvided> portProvided,
 			List<PortRequired> portRequired,
 			List<ServiceProvided> serviceProvided,
@@ -34,6 +25,10 @@ public class Configuration extends Component{
 		this.listComponent = listComponent;
 		this.listConnector = listConnector;
 		this.listLink = listLink;
+	}
+
+	public Configuration(String name) {
+		super(name);
 	}
 
 	public List<Connector> getListConnector() {
@@ -58,5 +53,25 @@ public class Configuration extends Component{
 
 	public void setAttachement(List<Link> listLink) {
 		this.listLink = listLink;
+	}
+	
+	public List<Link> getListLink() {
+		return listLink;
+	}
+
+	public void setListLink(List<Link> listLink) {
+		this.listLink = listLink;
+	}
+	
+	public void addComponent(Component component){
+		this.listComponent.add(component);
+	}
+	
+	public void addConnector(Connector connector){
+		this.listConnector.add(connector);
+	}
+	
+	public void addLink(Link link){
+		this.listLink.add(link);
 	}
 }
