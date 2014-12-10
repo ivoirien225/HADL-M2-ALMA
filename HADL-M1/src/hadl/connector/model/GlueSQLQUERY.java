@@ -10,4 +10,9 @@ public class GlueSQLQUERY extends GlueOO {
 		super(nameS, pairList);
 	}
 
+	public GlueSQLQUERY(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+	
 }

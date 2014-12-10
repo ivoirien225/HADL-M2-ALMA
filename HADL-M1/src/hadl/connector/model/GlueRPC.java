@@ -1,8 +1,6 @@
 package hadl.connector.model;
 
 import java.util.List;
-
-import hadl.connector.meta.model.Glue;
 import hadl.utils.meta.model.Pair;
 
 public class GlueRPC extends GlueOO {
@@ -11,4 +9,10 @@ public class GlueRPC extends GlueOO {
 		super(nameS, pairList);
 	}
 
+	public GlueRPC(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+	
 }

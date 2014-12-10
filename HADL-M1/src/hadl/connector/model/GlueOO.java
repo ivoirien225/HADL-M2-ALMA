@@ -3,6 +3,7 @@ package hadl.connector.model;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 import hadl.connector.meta.model.Glue;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
@@ -15,6 +16,13 @@ public class GlueOO extends Glue implements Observable, Observer {
 	public GlueOO(String name, List<Pair> pairList) {
 		super(name, pairList);
 	}
+	
+	public GlueOO(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+
 
 	public List<Observer> getObservers() {
 		return observers;

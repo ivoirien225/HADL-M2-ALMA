@@ -16,6 +16,11 @@ public class Glue {
 		this.pairList = pairList;
 	}
 	
+	public Glue(String name) {
+		// TODO Auto-generated constructor stub
+		this.name=name;
+	}
+
 	public String getName() {
 		return name;
 	}
