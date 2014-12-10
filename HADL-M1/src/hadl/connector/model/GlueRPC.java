@@ -5,7 +5,7 @@ import java.util.List;
 import hadl.connector.meta.model.Glue;
 import hadl.utils.meta.model.Pair;
 
-public class GlueRPC extends Glue {
+public class GlueRPC extends GlueOO {
 
 	public GlueRPC(String nameS, List<Pair> pairList) {
 		super(nameS, pairList);

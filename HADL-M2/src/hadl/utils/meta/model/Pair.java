@@ -37,9 +37,18 @@ public class Pair {
 		if(this.getFirstObject().equals(obj)){
 			return this.getSecondObject();
 		}
-		else {
-			return this.getFirstObject();
+		else{
+			if(this.getSecondObject().equals(obj)){
+				return this.getFirstObject();
+			}
 		}
+		return null;
+		
+	} 
+	
+	public boolean exist(Object ob){
+		
+		return (this.getFirstObject()== ob)||(this.getSecondObject()== ob); 
 		
 	}
 	
@@ -51,5 +60,6 @@ public class Pair {
 		
 		System.out.println(interfaces.get(server));
 		System.out.println(interfaces.get(connectionManager));
+		System.out.println(interfaces.exist(connectionManager));
 	}
 }

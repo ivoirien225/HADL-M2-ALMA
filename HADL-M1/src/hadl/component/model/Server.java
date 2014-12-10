@@ -62,8 +62,10 @@ public class Server extends Configuration implements Observer, Observable{
 				//Search the corresponding element of the current object in 
 				//the list of link of the configuration
 				for(Link l : getListLink()){
-					toNotify=(Observer)l.getInterfaces().get(ob);
-					break;
+					if(l.getInterfaces().exist(ob)){
+						toNotify=(Observer)l.getInterfaces().get(ob);
+						break;
+					}
 				}
 			}
 		}
