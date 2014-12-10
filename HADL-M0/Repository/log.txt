@@ -2,3 +2,35 @@
 	   *********************
 
 	   
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 

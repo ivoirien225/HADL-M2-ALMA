@@ -33,7 +33,7 @@ public class GlueOO extends Glue implements Observable, Observer {
 
 	@Override
 	public void addObserver(Observer ob) {
-		System.out.println("[INFO]"+this.getName()+" In addObserver");
+		
 		observers.add(ob);
 	}
 

@@ -3,8 +3,11 @@ package hadl.interfaces.model;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 import hadl.component.meta.model.Configuration;
 import hadl.component.meta.model.SimpleComponent;
+import hadl.component.model.GlobalConfig;
+import hadl.component.model.Server;
 import hadl.interfaces.meta.model.PortProvided;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
@@ -46,7 +49,7 @@ public class PortProvidedM extends PortProvided implements Observable, Observer 
 		}
 			if(observable instanceof SimpleComponent ){
 				for(Observer ob: observers){
-					if(ob instanceof Configuration){
+					if(ob instanceof Server){
 						try{
 							ob.update(this, message);
 							break;
@@ -62,21 +65,44 @@ public class PortProvidedM extends PortProvided implements Observable, Observer 
 			}else{
 					if(observable instanceof Configuration ){
 						
-						try {
-							Logger.loggerWritter(this, "notifyObservers", message);
-						} catch (IOException e2) {
-							e2.printStackTrace();
+						if(observable instanceof Server){
+							try {
+								Logger.loggerWritter(this, "notifyObservers", message);
+							} catch (IOException e2) {
+								e2.printStackTrace();
+							}
+							for(Observer ob: observers){
+								if(!(ob instanceof Server) && ob instanceof GlobalConfig ){
+									try{
+										ob.update(this, message);
+										break;
+									}catch(Exception e){
+										try {
+											Logger.loggerExceptionWritter(this, "notifyObservers", message);
+										} catch (IOException e1) {
+											e1.printStackTrace();
+										}
+									}
+								}
+							}
 						}
-						for(Observer ob: observers){
-							if(ob instanceof SimpleComponent){
-								try{
-									ob.update(this, message);
-									break;
-								}catch(Exception e){
-									try {
-										Logger.loggerExceptionWritter(this, "notifyObservers", message);
-									} catch (IOException e1) {
-										e1.printStackTrace();
+						else{
+							try {
+								Logger.loggerWritter(this, "notifyObservers", message);
+							} catch (IOException e2) {
+								e2.printStackTrace();
+							}
+							for(Observer ob: observers){
+								if(ob instanceof Server){
+									try{
+										ob.update(this, message);
+										break;
+									}catch(Exception e){
+										try {
+											Logger.loggerExceptionWritter(this, "notifyObservers", message);
+										} catch (IOException e1) {
+											e1.printStackTrace();
+										}
 									}
 								}
 							}

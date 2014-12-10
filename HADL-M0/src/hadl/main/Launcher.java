@@ -38,89 +38,110 @@ public class Launcher {
 	
 	public static void init(){
 		
-
+		//////////////////Server//////////////////////////////////////
+		
+		Server server = new Server("ServerConfig");
+		PortProvidedM receiveRequest = new PortProvidedM("receiveRequest");
+		receiveRequest.addObserver(server);
+		//////////////////Connection Manager///////////////////////////
+				
+		PortProvidedM externalSocket = new PortProvidedM("externalSocket");
+		externalSocket.addObserver(server);
+		PortRequiredM dbQuery = new PortRequiredM("dbQuery"); 
+		dbQuery.addObserver(server);
+		ConnectionManager connectionManager = new ConnectionManager("ConnectionManager");
+		connectionManager.addInterface(externalSocket);
+		connectionManager.addInterface(dbQuery);
+		connectionManager.addObserver(externalSocket);
+		connectionManager.addObserver(dbQuery);
+		
+		externalSocket.addObserver(connectionManager);
+		dbQuery.addObserver(connectionManager);
+		Binding serverBinding = new Binding("request-externalSoket", new Pair(receiveRequest,externalSocket)); 
+		
+		server.addObserver(receiveRequest);
+		server.addObserver(externalSocket);
+		server.addObserver(dbQuery);
 		/////////////////////////////Databases////////////////////////////////////
 		
-		List<PortProvided> listPortProvided = new ArrayList<PortProvided>();
-		PortProvidedM portProvidedDB = new PortProvidedM("port fourni BD");
-		listPortProvided.add(portProvidedDB);
-
-
-		List<PortRequired> listportRequired = new ArrayList<PortRequired>();
+		PortProvidedM queryIntDB = new PortProvidedM("queryIntDB");
+		queryIntDB.addObserver(server);
+		server.addObserver(queryIntDB);
 		PortRequiredM portRequired = new PortRequiredM("port requis BD");
-		listportRequired.add(portRequired);
 
-
-		List<ServiceProvided> listserviceProvided = new ArrayList<ServiceProvided>();
-		ServiceProvidedM serviceProvided = new ServiceProvidedM("service fourni BD");
-		listserviceProvided.add(serviceProvided);
-
-		List<ServiceRequired> listServiceRequired = new ArrayList<ServiceRequired>();
-		ServiceRequiredM serviceRequired = new ServiceRequiredM("service requis BD");
-		listServiceRequired.add(serviceRequired);
-
-		DataBase database = new DataBase("HADL", listPortProvided, listportRequired, listserviceProvided, listServiceRequired);
-		
-		
-		//////////////////Connection Manager///////////////////////////
-		
-		PortProvidedM externalSocket = new PortProvidedM("externalSocket");
-		PortRequiredM dbQuery = new PortRequiredM("dbQuery"); 
-		ConnectionManager connectionManager = new ConnectionManager("ConnectionManager", new ArrayList<PortProvided>(Arrays.asList(externalSocket)), new ArrayList<PortRequired>(Arrays.asList(dbQuery)), null, null);
-		
-	
+		DataBase database = new DataBase("HADL");
+		queryIntDB.addObserver(database);
+		database.addInterface(queryIntDB);
+		database.addInterface(portRequired);
+		database.addObserver(queryIntDB);
+				
 		//////////////Sql Query connector////////////////////////////////////////
 		
 		RoleProvidedM rolePSqlQuery = new RoleProvidedM("rolePSqlQuery");
 		RoleRequiredM roleRSqlQuery = new RoleRequiredM("roleRSqlQuery");
-		GlueSQLQUERY SqlQueryCon = new GlueSQLQUERY("Glue SqlQuery", new ArrayList<Pair>(Arrays.asList(new Pair(rolePSqlQuery, roleRSqlQuery))));
-		SqlQuery conSqlQuery =  new SqlQuery("conSqlQuery", new ArrayList<Role_Provide>(Arrays.asList(rolePSqlQuery)), new ArrayList<Role_Required>(Arrays.asList(roleRSqlQuery)), SqlQueryCon);
+		
+		GlueSQLQUERY SqlQueryCon = new GlueSQLQUERY("Glue SqlQuery");
+		SqlQueryCon.addPairToListPair(new Pair(rolePSqlQuery, roleRSqlQuery));
+		
+		SqlQuery conSqlQuery =  new SqlQuery("conSqlQuery");
+		conSqlQuery.addGlue(SqlQueryCon);
+		conSqlQuery.addRole_Provide(rolePSqlQuery);
+		conSqlQuery.addRole_Required(roleRSqlQuery);
+		rolePSqlQuery.addObserver(SqlQueryCon);
+		roleRSqlQuery.addObserver(SqlQueryCon);
+		roleRSqlQuery.addObserver(server);
+		rolePSqlQuery.addObserver(server);
+		server.addObserver(roleRSqlQuery);
+		server.addObserver(rolePSqlQuery);
+		SqlQueryCon.addObserver(roleRSqlQuery);
+		SqlQueryCon.addObserver(rolePSqlQuery);
 		
 		//////////////////////Attachment of serveurConfig////////////////////////////
 		
 		Attachement Manager2ConnectorSql = new Attachement("Manager2ConnectorSql", new Pair(dbQuery, rolePSqlQuery));
-		Attachement Db2ConnectorSql = new Attachement("Db2ConnectorSql", new Pair(portProvidedDB, roleRSqlQuery));
+		Attachement Db2ConnectorSql = new Attachement("Db2ConnectorSql", new Pair(queryIntDB, roleRSqlQuery));
 		
 		
-		//////////////////Server//////////////////////////////////////
-		PortProvidedM receiveRequest = new PortProvidedM("receiveRequest");		
-		Binding serverBinding = new Binding("request-externalSoket", new Pair(receiveRequest,externalSocket)); 
-		Server server = new Server("ServerConfig",  new ArrayList<PortProvided>(Arrays.asList(receiveRequest)), null, null, null, new ArrayList<Connector>(Arrays.asList(conSqlQuery)), new ArrayList<Component>(Arrays.asList(database,connectionManager)), new ArrayList<Link>(Arrays.asList(serverBinding,Db2ConnectorSql,Manager2ConnectorSql)));
 		
 		/**
 		 * Initializing server components 
 		 */
+		server.addInterface(receiveRequest);
+		server.addComponent(database);
+		server.addComponent(connectionManager);
 		
-		server.getListComponent().add(database);
-		server.getListComponent().add(connectionManager);
+		server.addLink(serverBinding);
+		server.addLink(Db2ConnectorSql);
+		server.addLink(Manager2ConnectorSql);
+		server.addConnector(conSqlQuery);
+	
+		///////////////////////////////Global Config/////////////////////////////////////
+		GlobalConfig globalConfig = new GlobalConfig("Global Config");
 		
-		server.getListLink().add(serverBinding);
-		server.getListLink().add(Db2ConnectorSql);
-		server.getListLink().add(Manager2ConnectorSql);
-		server.getListConnector().add(conSqlQuery);
 		
-		///////////////////PortClient///////////////////////////////////////
-		PortRequiredM sendRequest = new PortRequiredM("sendRequest");
-		
-		///////////////////////////RoleRPC//////////////////////////////////////////
+		///////////////////////////ConnectorRPC//////////////////////////////////////////
 		RoleProvidedM roleP = new RoleProvidedM("Role Provided RPC");
 		RoleRequiredM roleR = new RoleRequiredM("Role Required RPC");
-		GlueRPC glueRPC = new GlueRPC("Glue RPC ", new ArrayList<Pair>(Arrays.asList(new Pair(roleP, roleR))));
-		RPC rpc = new RPC("RPC",  new ArrayList<Role_Provide>(Arrays.asList(roleP)),  new ArrayList<Role_Required>(Arrays.asList(roleR)), glueRPC);
-		///////////////////////////RoleSqlQuery///////////////////////////////////////
-						
+		GlueRPC glueRPC = new GlueRPC("Glue RPC ");
+		glueRPC.addPairToListPair(new Pair(roleP, roleR));
+		RPC rpc = new RPC("RPC");
+		rpc.addGlue(glueRPC);
+		rpc.addRole_Provide(roleP);
+		rpc.addRole_Required(roleR);
 		
+		roleP.addObserver(glueRPC);
+		roleP.addObserver(globalConfig);
+		roleR.addObserver(glueRPC);
+		roleR.addObserver(globalConfig);
 		
-		//////////////////////////Attachment Server GlobalConfig////////////////////////////
+		glueRPC.addObserver(roleR);
+		glueRPC.addObserver(roleP);
 		
-		Attachement clientRPC = new Attachement("clientRPC", new Pair(sendRequest, roleP));
-		Attachement RPCServeur = new Attachement("RPCServeur", new Pair(roleR, receiveRequest));
+		globalConfig.addObserver(roleR);
+		globalConfig.addObserver(roleP);
 		
-		//Pair interfaces = new Pair(server,connectionManager);
-		
-		Pair interfaces = new Pair(connectionManager,connectionManager);//Condition d'arret sinon boucle "petit test"
-		Binding bd =new Binding("portserverPortConnectionManager", interfaces);
-		
+		globalConfig.addObserver(receiveRequest);
+		receiveRequest.addObserver(globalConfig);
 		////////////////Client///////////////////////
 		
 		List<String> listParam = new ArrayList<String>();
@@ -128,30 +149,27 @@ public class Launcher {
 		listParam.add("commandeId");
 		listParam.add("Yannis");
 		Message resquest = new Message("SELECT", listParam, true, "", null);
-		
-		List<PortRequired> clientPortProvided = new ArrayList<PortRequired>();
-		Client client = new Client("Client", null, clientPortProvided, null, null);
-		clientPortProvided.add(sendRequest);
+	
+		PortRequiredM sendRequest = new PortRequiredM("sendRequest");
+		sendRequest.addObserver(globalConfig);
+		globalConfig.addObserver(sendRequest);
+		Client client = new Client("Client");
+		client.addInterface(sendRequest);
 		client.addObserver(sendRequest);
-		GlobalConfig globalConfig = new GlobalConfig("Global Config", null, null, null, null,  new ArrayList<Connector>(Arrays.asList(rpc)), new ArrayList<Component>(Arrays.asList(client,server)), new ArrayList<Link>(Arrays.asList(clientRPC,RPCServeur)));		
+		sendRequest.addObserver(client);
 		
-		/////////////////////////Attachment//////////////////////////////////
+//////////////////////////Attachment Server GlobalConfig////////////////////////////
 		
-		
-		/////////////////////////////////////////////////////////////////////
-		
-		connectionManager.addObserver(server);
-		connectionManager.addObserver(client);
-		
-		//srv.addObserver(server);
-		server.addObserver((Observer) server.getPortProvided().get(0));
-		
-		client.addObserver(connectionManager);
+		Attachement client2RPC = new Attachement("clientRPC", new Pair(sendRequest, roleP));
+		Attachement RPC2Serveur = new Attachement("RPCServeur", new Pair(roleR, receiveRequest));
+				
+		globalConfig.addComponent(client);
+		globalConfig.addComponent(server);
+		globalConfig.addConnector(rpc);
+		globalConfig.addLink(client2RPC);
+		globalConfig.addLink(RPC2Serveur);
 		
 		client.notifyObservers(client, resquest);
-		
-		/////////////////GlobalConfig////////////////////////////////
-		//GlobalConfig globalConfig = new GlobalConfig();
 		
 	}
 
