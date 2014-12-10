@@ -16,7 +16,6 @@ public class RPC extends SimpleConnector{
 
 	public RPC(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 
 }

@@ -29,11 +29,9 @@ public class GlobalConfig extends Configuration implements Observable, Observer 
 			List<Link> listLink) {
 		super(name, portProvided, portRequired, serviceProvided, serviceRequired,
 				listConnector, listComponent, listLink);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public GlobalConfig(String name) {
-		// TODO Auto-generated constructor stub
 		super(name);
 	}
 
@@ -49,9 +47,13 @@ public class GlobalConfig extends Configuration implements Observable, Observer 
 
 	@Override
 	public void update(Observable observable, Message message) {
+		try {
+			Logger.loggerWritter(this, "update", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 		try{
 			notifyObservers(observable, message);
-			Logger.loggerWritter(this, "update", message);
 		}catch(Exception e){
 			try {
 				Logger.loggerExceptionWritter(this, "update", message);
@@ -63,6 +65,11 @@ public class GlobalConfig extends Configuration implements Observable, Observer 
 
 	@Override
 	public void notifyObservers(Observable observable, Message message) {
+		try {
+			Logger.loggerWritter(this, "notifyObservers", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 		Observer toNotify = null;
 		for(Observer ob : observers){
 			if(ob.equals((Observer)observable)){
@@ -78,7 +85,6 @@ public class GlobalConfig extends Configuration implements Observable, Observer 
 		}
 		try{
 			toNotify.update(this, message);
-			Logger.loggerWritter(this, "notifyObservers", message);
 		}catch(Exception e){
 			try {
 				Logger.loggerExceptionWritter(this, "notifyObservers", message);

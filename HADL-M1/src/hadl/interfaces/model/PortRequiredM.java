@@ -22,11 +22,15 @@ public class PortRequiredM extends PortRequired implements Observable, Observer{
 
 	@Override
 	public void notifyObservers(Observable observable, Message message) {
+		try {
+			Logger.loggerWritter(this, "notifyObservers", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 		if(observable instanceof SimpleComponent ){
 			for(Observer ob: observers){
 				if(ob instanceof Configuration){
 					try{
-						Logger.loggerWritter(this, "notifyObservers", message);
 						ob.update(this, message);
 						break;
 					}catch(Exception e){
@@ -40,12 +44,15 @@ public class PortRequiredM extends PortRequired implements Observable, Observer{
 			}
 			
 		}else{
-			
+			try {
+				Logger.loggerWritter(this, "notifyObservers", message);
+			} catch (IOException e2) {
+				e2.printStackTrace();
+			}
 				if(observable instanceof Configuration ){
 					for(Observer ob: observers){
 						if(ob instanceof SimpleComponent){
 							try{
-								Logger.loggerWritter(this, "notifyObservers", message);
 								ob.update(this, message);
 								break;
 							}catch(Exception e){
@@ -71,9 +78,13 @@ public class PortRequiredM extends PortRequired implements Observable, Observer{
 
 	@Override
 	public void update(Observable observable, Message message) {
+		try {
+			Logger.loggerWritter(this, "update", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 		try{
 			notifyObservers(observable, message);
-			Logger.loggerWritter(this, "update", message);
 		}catch(Exception e){
 			try {
 				Logger.loggerExceptionWritter(this, "update", message);

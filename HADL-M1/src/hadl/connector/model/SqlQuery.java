@@ -12,12 +12,10 @@ public class SqlQuery extends SimpleConnector {
 	public SqlQuery(String name, List<Role_Provide> listRole_Provide,
 			List<Role_Required> listRole_Required, Glue glue) {
 		super(name, listRole_Provide, listRole_Required, glue);
-		// TODO Auto-generated constructor stub
 	}
 
 	public SqlQuery(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 	
 }

@@ -30,7 +30,6 @@ public class ConnectionManager extends SimpleComponent implements Observable,
 	
 	public ConnectionManager(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 
 
@@ -38,12 +37,15 @@ public class ConnectionManager extends SimpleComponent implements Observable,
 	@Override
 	public void update(Observable observable, Message message) {
 		
-		
+		try {
+			Logger.loggerWritter(this, "update", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 		try {
 			notifyObservers(observable, message);
-			Logger.loggerWritter(this, "update", message);
 			
-		} catch (IOException e) {
+		} catch (Exception e) {
 			try {
 				Logger.loggerExceptionWritter(this, "update", message);
 			} catch (IOException e1) {
@@ -52,12 +54,16 @@ public class ConnectionManager extends SimpleComponent implements Observable,
 	}
 
 	public void notifyObservers(Observable observable, Message message) {
+		try {
+			Logger.loggerWritter(this, "notifyObservers", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		} 
 		if(observable instanceof PortProvided){
 			for(Observer ob: observers){
 				if(ob instanceof PortRequired){
 					try{
 						ob.update(this, message);
-						Logger.loggerWritter(this, "notifyObservers", message); 
 						break;
 					}catch(Exception e){
 						try {
@@ -72,11 +78,15 @@ public class ConnectionManager extends SimpleComponent implements Observable,
 		}else{
 			
 				if(observable instanceof PortRequired){
+					try {
+						Logger.loggerWritter(this, "notifyObservers", message);
+					} catch (IOException e2) {
+						e2.printStackTrace();
+					} 
 					for(Observer ob: observers){
 						if(ob instanceof PortProvided){
 							try{
 								ob.update(this, message);
-								Logger.loggerWritter(this, "notifyObservers", message); 
 								break;
 						}catch(Exception e){
 							try {
@@ -87,7 +97,7 @@ public class ConnectionManager extends SimpleComponent implements Observable,
 					     }
 				       }
 					}
-				}
+			}
 		}
 	}
 

@@ -3,9 +3,7 @@ package hadl.interfaces.model;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import hadl.component.meta.model.Configuration;
-import hadl.connector.meta.model.Glue;
 import hadl.connector.meta.model.SimpleConnector;
 import hadl.interfaces.meta.model.Role_Required;
 import hadl.tools.interfaces.Observable;
@@ -27,11 +25,15 @@ public class RoleRequiredM extends Role_Required implements Observable, Observer
 
 	@Override
 	public void notifyObservers(Observable observable, Message message) {
+		try {
+			Logger.loggerWritter(this, "notifyObservers", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 		if(observable instanceof SimpleConnector ){
 			for(Observer ob: observers){
 				if(ob instanceof Configuration){
 					try{
-						Logger.loggerWritter(this, "notifyObservers", message);
 						ob.update(this, message);
 						break;
 					}catch(Exception e){
@@ -42,14 +44,17 @@ public class RoleRequiredM extends Role_Required implements Observable, Observer
 						}}
 				}
 			}
-			
 		}else{
 			
 				if(observable instanceof Configuration ){
+					try {
+						Logger.loggerWritter(this, "notifyObservers", message);
+					} catch (IOException e2) {
+						e2.printStackTrace();
+					}
 					for(Observer ob: observers){
 						if(ob instanceof SimpleConnector){
 							try{
-								Logger.loggerWritter(this, "notifyObservers", message);
 								ob.update(this, message);
 								break;
 							}catch(Exception e){
@@ -76,9 +81,13 @@ public class RoleRequiredM extends Role_Required implements Observable, Observer
 
 	@Override
 	public void update(Observable observable, Message message) {
+		try {
+			Logger.loggerWritter(this, "update", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 		try{
 			notifyObservers(observable, message);
-			Logger.loggerWritter(this, "update", message);
 		}catch(Exception e){
 			try {
 				Logger.loggerExceptionWritter(this, "update", message);

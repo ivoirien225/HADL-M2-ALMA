@@ -1,9 +1,7 @@
 package hadl.component.model;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import hadl.component.meta.model.Component;
 import hadl.connector.meta.model.Connector;
 import hadl.interfaces.meta.model.PortProvided;
@@ -30,7 +28,6 @@ public class Server extends GlobalConfig{
 	
 	public Server(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 
 }

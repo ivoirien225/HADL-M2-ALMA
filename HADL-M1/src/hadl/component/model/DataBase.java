@@ -35,7 +35,6 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 
 	public DataBase(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 
 
@@ -44,14 +43,15 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 
 	@Override
 	public void update(Observable observable, Message mes) {
+		
+		try {
+			Logger.loggerWritter(this, "update", message);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		if(observable instanceof PortProvided){
 			this.message = this.resolveRequest(mes);
 			notifyObservers(observable,this.message);
-			try {
-				Logger.loggerWritter(this, "update", message);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
 		}else{
 			try {
 				Logger.loggerExceptionWritter(this, "update", message);
@@ -63,10 +63,14 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 	
 	@Override
 	public void notifyObservers(Observable observable, Message response) {
+		try {
+			Logger.loggerWritter(this, "notifyObservers", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 		for(Observer o : this.listObserver){
 			try{
 			o.update(this, response);
-			Logger.loggerWritter(this, "notifyObservers", message);
 			}catch(Exception e){
 				try {
 					Logger.loggerExceptionWritter(this, "notifyObservers", message);

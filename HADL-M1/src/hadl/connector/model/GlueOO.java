@@ -3,10 +3,7 @@ package hadl.connector.model;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import hadl.connector.meta.model.Glue;
-import hadl.interfaces.meta.model.Role_Provide;
-import hadl.interfaces.meta.model.Role_Required;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
 import hadl.utils.Logger;
@@ -17,7 +14,6 @@ public class GlueOO extends Glue implements Observable, Observer {
 	
 	public GlueOO(String name, List<Pair> pairList) {
 		super(name, pairList);
-		// TODO Auto-generated constructor stub
 	}
 
 	public List<Observer> getObservers() {
@@ -40,10 +36,15 @@ public class GlueOO extends Glue implements Observable, Observer {
 
 	@Override
 	public void update(Observable observable, Message message) {
+		
+		try {
+			Logger.loggerWritter(this, "update", message);
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
 		try {
 			notifyObservers(observable, message);
-			Logger.loggerWritter(this, "update", message);
-		} catch (IOException e) {
+		} catch (Exception e) {
 			try {
 				Logger.loggerExceptionWritter(this, "update", message);
 			} catch (IOException ex) {
@@ -54,7 +55,12 @@ public class GlueOO extends Glue implements Observable, Observer {
 
 	@Override
 	public void notifyObservers(Observable observable, Message message) {
-		Observer toNotify=null;
+		Observer toNotify = null;
+		try {
+			Logger.loggerWritter(this, "notifyObservers", message);
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 		for(Observer ob : observers){
 			if(ob.equals((Observer)observable)){
 				/*Search the corresponding reference of role in 
@@ -69,7 +75,6 @@ public class GlueOO extends Glue implements Observable, Observer {
 		}
 		try{
 			toNotify.update(this, message);
-			Logger.loggerWritter(this, "notifyObservers", message);
 		}catch(Exception e){
 			try {
 				Logger.loggerExceptionWritter(this, "notifyObservers", message);
