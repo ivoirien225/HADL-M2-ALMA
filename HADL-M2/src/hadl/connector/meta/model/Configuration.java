@@ -16,6 +16,10 @@ public class Configuration extends Connector{
 		this.listConnector = listConnector;
 	}
 	
+	public Configuration(String name) {
+		super(name);
+	}
+
 	public List<SimpleConnector> getListConnector() {
 		return listConnector;
 	}
@@ -24,4 +28,15 @@ public class Configuration extends Connector{
 		this.listConnector = listConnector;
 	}
 	
+	public void addSimpleConnector(SimpleConnector simpleConnector){
+		this.listConnector.add(simpleConnector);
+	}
+	
+	public void addRole_Provide(Role_Provide role_Provide){
+		this.listRole_Provide.add(role_Provide);
+	}
+	
+	public void addRole_Required(Role_Required role_Required){
+		this.listRole_Required.add(role_Required);
+	}
 }

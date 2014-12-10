@@ -2,12 +2,11 @@ package hadl.connector.meta.model;
 
 import hadl.interfaces.meta.model.Role_Required;
 import hadl.interfaces.meta.model.Role_Provide;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Connector{
-	String name = null;
+	String name;
 	List<Role_Provide> listRole_Provide = new ArrayList<Role_Provide>();
 	List<Role_Required> listRole_Required = new ArrayList<Role_Required>();
 	
@@ -18,6 +17,11 @@ public abstract class Connector{
 		this.listRole_Provide = listRole_Provide;
 		this.listRole_Required = listRole_Required;
 	}
+	
+	public Connector(String name) {
+		this.name = name;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -26,5 +30,13 @@ public abstract class Connector{
 	}
 	public List<Role_Required> getListRole_Required() {
 		return listRole_Required;
+	}
+	
+	public void addRole_Provide(Role_Provide role_Provide){
+		this.listRole_Provide.add(role_Provide);
+	}
+	
+	public void addRole_Required(Role_Required role_Required){
+		this.listRole_Required.add(role_Required);
 	}
 }
