@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SimpleConnector extends Connector {
 	
-	private Glue glue;
+	protected Glue glue;
 	
 	public SimpleConnector(String name, List<Role_Provide> listRole_Provide,
 			List<Role_Required> listRole_Required, Glue glue) {
