@@ -26,6 +26,15 @@ public class ConnectionManager extends SimpleComponent implements Observable,
 		super(name, portProvided, portRequired, serviceProvided, required);
 	}
 
+	
+	
+	public ConnectionManager(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	@Override
 	public void update(Observable observable, Message message) {
 		

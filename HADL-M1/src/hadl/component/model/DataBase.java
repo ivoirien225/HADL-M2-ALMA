@@ -10,10 +10,12 @@ import hadl.tools.interfaces.Observer;
 import hadl.utils.Database;
 import hadl.utils.Logger;
 import hadl.utils.Message;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
@@ -28,6 +30,15 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 			List<ServiceRequired> required) {
 		super(name, portProvided, portRequired, serviceProvided, required);
 	}
+	
+	
+
+	public DataBase(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+
 
 	public File baseFile = new File("Repository/database_file.xml");
 
