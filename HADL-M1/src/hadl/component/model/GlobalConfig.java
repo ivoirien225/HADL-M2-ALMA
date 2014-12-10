@@ -31,6 +31,11 @@ public class GlobalConfig extends Configuration implements Observable, Observer 
 				listConnector, listComponent, listLink);
 		// TODO Auto-generated constructor stub
 	}
+	
+	public GlobalConfig(String name) {
+		// TODO Auto-generated constructor stub
+		super(name);
+	}
 
 	@Override
 	public void addObserver(Observer ob) {
@@ -64,8 +69,10 @@ public class GlobalConfig extends Configuration implements Observable, Observer 
 				//Search the corresponding element of the current object in 
 				//the list of link of the configuration
 				for(Link l : getListLink()){
-					toNotify=(Observer)l.getInterfaces().get(ob);
-					break;
+					if(l.getInterfaces().exist(ob)){
+						toNotify=(Observer)l.getInterfaces().get(ob);
+						break;
+					}
 				}
 			}
 		}
