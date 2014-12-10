@@ -6,8 +6,5 @@ public class Binding extends Link {
 
 	public Binding(String name, Pair interfaces) {
 		super(name, interfaces);
-		// TODO Auto-generated constructor stub
 	}
-	
-	
 }

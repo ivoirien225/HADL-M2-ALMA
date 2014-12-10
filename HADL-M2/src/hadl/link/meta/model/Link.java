@@ -3,9 +3,9 @@ package hadl.link.meta.model;
 import hadl.utils.meta.model.Pair;
 
 public abstract class Link {
+	
 	private String name;
-
-	protected Pair interfaces;
+	private Pair interfaces;
 
 	public String getName() {
 		return name;
@@ -24,5 +24,4 @@ public abstract class Link {
 	public Pair getInterfaces() {
 		return interfaces;
 	}
-
 }

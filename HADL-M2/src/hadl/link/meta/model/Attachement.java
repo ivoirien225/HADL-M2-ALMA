@@ -6,8 +6,5 @@ public class Attachement extends Link {
 
 	public Attachement(String name, Pair interfaces) {
 		super(name, interfaces);
-		// TODO Auto-generated constructor stub
 	}
-
-	
 }
