@@ -15,4 +15,9 @@ public class SqlQuery extends SimpleConnector {
 		// TODO Auto-generated constructor stub
 	}
 
+	public SqlQuery(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+	
 }

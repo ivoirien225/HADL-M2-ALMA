@@ -14,4 +14,9 @@ public class RPC extends SimpleConnector{
 		super(name, listRole_Provide, listRole_Required, glue);
 	}
 
+	public RPC(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
 }
