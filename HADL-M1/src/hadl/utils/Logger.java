@@ -9,6 +9,7 @@ import java.io.IOException;
 import hadl.component.meta.model.Component;
 import hadl.connector.meta.model.SimpleConnector;
 import hadl.interfaces.meta.model.Interface;
+import hadl.interfaces.meta.model.PortProvided;
 
 public class Logger {
 
@@ -23,7 +24,7 @@ public class Logger {
 		}
 		return res.toString();
 	}
-	
+/*	
 	public static void loggerExceptionWritter(Component component, String methodName,  Message message) throws IOException {
 		System.out.println("[INFOS]**[EXCEPTION] -- Element name: " + component.getClass().getSimpleName() + " Method called: "+ methodName + " " + " Message type: " + message.getName() + " "+ "Message result: " + message.response);
 		String chaine = loggerReader();
@@ -90,7 +91,7 @@ public class Logger {
 		writer.write(chaine);
 		writer.close();
 	}
-	
+	*/
 	public static void loggerWritter(Object ob, String methodName,  Message message) throws IOException {
 		System.out.println("[INFOS] -- Element name: " + ob.getClass().getSimpleName() + " Method called: "+ methodName + " " + " Message type: " + message.getName() + " "+ "Message result: " + message.response);
 		String chaine = loggerReader();
@@ -107,10 +108,14 @@ public class Logger {
 		String chaine = loggerReader();
 		FileWriter writer = new FileWriter(new File("Repository/log.txt"));
 		if(!(chaine.equals(null))){
-			chaine = chaine + "[INFOS] -- Element name: " + ob.getClass().getSimpleName() + "Method called: "+ methodName + " " + " Message type: " + message.getName() + " "+ "Message result: " + message.response; 
+			chaine = chaine + "[INFOS]**[EXCEPTION] -- Element name: " + ob.getClass().getSimpleName() + " Method called: "+ methodName + " " + " Message type: " + message.getName() + " "+ "Message result: " + message.response; 
 		}
 		writer.write(chaine);
 		writer.close();
+	}
+	
+	public static void main(String[] args) throws IOException {
+		loggerExceptionWritter(new PortProvided("yannis"), "test cyrille", new Message("arafet", null, true, null, null));
 	}
 	
 }
