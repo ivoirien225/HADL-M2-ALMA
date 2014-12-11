@@ -3,8 +3,10 @@ package hadl.interfaces.model;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 import hadl.component.meta.model.Configuration;
 import hadl.connector.meta.model.SimpleConnector;
+import hadl.connector.model.GlueOO;
 import hadl.interfaces.meta.model.Role_Required;
 import hadl.tools.interfaces.Observable;
 import hadl.tools.interfaces.Observer;
@@ -30,7 +32,7 @@ public class RoleRequiredM extends Role_Required implements Observable, Observer
 		} catch (IOException e2) {
 			e2.printStackTrace();
 		}
-		if(observable instanceof SimpleConnector ){
+		if(observable instanceof GlueOO ){
 			for(Observer ob: observers){
 				if(ob instanceof Configuration){
 					try{
@@ -41,9 +43,11 @@ public class RoleRequiredM extends Role_Required implements Observable, Observer
 							Logger.loggerExceptionWritter(this, "notifyObservers", message);
 						} catch (IOException e1) {
 							e1.printStackTrace();
-						}}
+						}
+					}
 				}
 			}
+			
 		}else{
 			
 				if(observable instanceof Configuration ){
@@ -53,7 +57,7 @@ public class RoleRequiredM extends Role_Required implements Observable, Observer
 						e2.printStackTrace();
 					}
 					for(Observer ob: observers){
-						if(ob instanceof SimpleConnector){
+						if(ob instanceof GlueOO){
 							try{
 								ob.update(this, message);
 								break;
@@ -62,7 +66,8 @@ public class RoleRequiredM extends Role_Required implements Observable, Observer
 									Logger.loggerExceptionWritter(this, "notifyObservers", message);
 								} catch (IOException e1) {
 									e1.printStackTrace();
-								}}
+								}
+							}
 						}
 					}
 				}
