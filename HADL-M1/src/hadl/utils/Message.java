@@ -26,7 +26,7 @@ public class Message {
 		return isRequest;
 	}
 
-	public void setRequest(boolean isRequest) {
+	public void setIsRequest(boolean isRequest) {
 		this.isRequest = isRequest;
 	}
 

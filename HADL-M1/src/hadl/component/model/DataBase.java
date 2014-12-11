@@ -105,6 +105,7 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 						if(database.getClient().getName().equals(constraint))
 							result = String.valueOf(database.getClient().getCommandeId());
 							req.setResponse(result);
+							req.setIsRequest(true);
 					}
 					}catch(JAXBException e){
 						e.printStackTrace();
