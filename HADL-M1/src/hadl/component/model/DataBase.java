@@ -44,8 +44,14 @@ public class DataBase extends SimpleComponent implements Observable, Observer{
 	@Override
 	public void update(Observable observable, Message mes) {
 		if(observable instanceof PortProvided){
-			this.message = this.resolveRequest(mes);
-			notifyObservers(observable,this.message);
+			try {
+				Logger.loggerWritter(this, "notifyObservers", mes);
+				this.message = this.resolveRequest(mes);
+				notifyObservers(observable,this.message);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
 		}else{
 			try {
 				Logger.loggerExceptionWritter(this, "update", message);
