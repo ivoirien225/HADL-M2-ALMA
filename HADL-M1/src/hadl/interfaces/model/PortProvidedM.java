@@ -7,6 +7,7 @@ import java.util.List;
 import hadl.component.meta.model.Component;
 import hadl.component.meta.model.Configuration;
 import hadl.component.meta.model.SimpleComponent;
+import hadl.component.model.DataBase;
 import hadl.component.model.GlobalConfig;
 import hadl.component.model.Server;
 import hadl.interfaces.meta.model.PortProvided;
@@ -87,13 +88,13 @@ public class PortProvidedM extends PortProvided implements Observable, Observer 
 			
 			if(observable instanceof Server ){
 				for(Observer ob: observers){
-					if(!(ob instanceof Server) && (ob instanceof GlobalConfig)){
+					if((ob instanceof GlobalConfig)){
 						try{
 							ob.update(this, message);
 							break;
 						}catch(Exception e){
 							try {
-								Logger.loggerExceptionWritter(this, "notifyObservers", message);
+							Logger.loggerExceptionWritter(this, "notifyObservers", message);
 							} catch (IOException e1) {
 								e1.printStackTrace();
 							}						}
@@ -101,7 +102,6 @@ public class PortProvidedM extends PortProvided implements Observable, Observer 
 					if((ob instanceof SimpleComponent)){
 						try{
 							ob.update(this, message);
-							break;
 						}catch(Exception e){
 							try {
 								Logger.loggerExceptionWritter(this, "notifyObservers", message);

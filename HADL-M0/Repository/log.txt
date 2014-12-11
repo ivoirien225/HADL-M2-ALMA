@@ -1,7 +1,5 @@
--------LOG OF COMMUNICATIONS-------
-	   *********************
-
-	   
+				------------------------------LOG FILE------------------------------
+				
 [INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
 [INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
@@ -10,6 +8,36 @@
 [INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
 [INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS]**[EXCEPTION] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
 [INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
@@ -18,6 +46,36 @@
 [INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
 [INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS]**[EXCEPTION] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
 [INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
@@ -26,6 +84,36 @@
 [INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
 [INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS]**[EXCEPTION] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
 [INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
@@ -34,3 +122,1006 @@
 [INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
 [INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
 [INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS]**[EXCEPTION] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS]**[EXCEPTION] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS]**[EXCEPTION] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: String Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: String Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: String Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: String Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: String Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: String Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: String Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: String Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 
+[INFOS] -- Element name: DataBase Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueSQLQUERY Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: ConnectionManager Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Server Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlueRPC Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: RoleProvidedM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: GlobalConfig Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: update  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: PortRequiredM Method called: notifyObservers  Message type: SELECT Message result: 1
+[INFOS] -- Element name: Client Method called: update  Message type: SELECT Message result: 1

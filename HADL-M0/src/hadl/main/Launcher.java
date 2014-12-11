@@ -62,6 +62,7 @@ public class Launcher {
 		server.addObserver(receiveRequest);
 		server.addObserver(externalSocket);
 		server.addObserver(dbQuery);
+		
 		/////////////////////////////Databases////////////////////////////////////
 		
 		PortProvidedM queryIntDB = new PortProvidedM("queryIntDB");
@@ -158,7 +159,7 @@ public class Launcher {
 		client.addObserver(sendRequest);
 		sendRequest.addObserver(client);
 		
-//////////////////////////Attachment Server GlobalConfig////////////////////////////
+//////////////////////////Attachment GlobalConfig////////////////////////////
 		
 		Attachement client2RPC = new Attachement("clientRPC", new Pair(sendRequest, roleP));
 		Attachement RPC2Serveur = new Attachement("RPCServeur", new Pair(roleR, receiveRequest));
@@ -168,7 +169,8 @@ public class Launcher {
 		globalConfig.addConnector(rpc);
 		globalConfig.addLink(client2RPC);
 		globalConfig.addLink(RPC2Serveur);
-		
+		 
+		System.out.println(client.getClass().getSimpleName()+" Sending request from ....");
 		client.notifyObservers(client, resquest);
 		
 	}

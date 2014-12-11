@@ -40,6 +40,7 @@ public class Client extends SimpleComponent implements Observable, Observer{
 		}
 		if(observable instanceof PortRequired){
 			this.response = message;
+			System.out.println("Acknowledgment of receipt\nResult of my request = "+this.response.response);
 		}
 		else{
 			try {
