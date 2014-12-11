@@ -1,36 +1,22 @@
 package hadl.main;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
-import hadl.component.meta.model.Component;
 import hadl.component.model.Client;
 import hadl.component.model.ConnectionManager;
 import hadl.component.model.DataBase;
 import hadl.component.model.GlobalConfig;
 import hadl.component.model.Server;
-import hadl.connector.meta.model.Connector;
 import hadl.connector.model.GlueRPC;
 import hadl.connector.model.GlueSQLQUERY;
 import hadl.connector.model.RPC;
 import hadl.connector.model.SqlQuery;
-import hadl.interfaces.meta.model.PortProvided;
-import hadl.interfaces.meta.model.PortRequired;
-import hadl.interfaces.meta.model.Role_Provide;
-import hadl.interfaces.meta.model.Role_Required;
-import hadl.interfaces.meta.model.ServiceProvided;
-import hadl.interfaces.meta.model.ServiceRequired;
 import hadl.interfaces.model.PortProvidedM;
 import hadl.interfaces.model.PortRequiredM;
 import hadl.interfaces.model.RoleProvidedM;
 import hadl.interfaces.model.RoleRequiredM;
-import hadl.interfaces.model.ServiceProvidedM;
-import hadl.interfaces.model.ServiceRequiredM;
 import hadl.link.meta.model.Attachement;
 import hadl.link.meta.model.Binding;
-import hadl.link.meta.model.Link;
-import hadl.tools.interfaces.Observer;
 import hadl.utils.Message;
 import hadl.utils.meta.model.Pair;
 
@@ -38,12 +24,13 @@ public class Launcher {
 	
 	public static void init(){
 		
-		//////////////////Server//////////////////////////////////////
+		//////////////////Configuration Server//////////////////////////////////////
 		
 		Server server = new Server("ServerConfig");
 		PortProvidedM receiveRequest = new PortProvidedM("receiveRequest");
 		receiveRequest.addObserver(server);
-		//////////////////Connection Manager///////////////////////////
+		
+		//////////////////Component Connection Manager///////////////////////////
 				
 		PortProvidedM externalSocket = new PortProvidedM("externalSocket");
 		externalSocket.addObserver(server);
@@ -63,7 +50,7 @@ public class Launcher {
 		server.addObserver(externalSocket);
 		server.addObserver(dbQuery);
 		
-		/////////////////////////////Databases////////////////////////////////////
+		/////////////////////////////Component Databases////////////////////////////////////
 		
 		PortProvidedM queryIntDB = new PortProvidedM("queryIntDB");
 		queryIntDB.addObserver(server);
@@ -97,7 +84,7 @@ public class Launcher {
 		SqlQueryCon.addObserver(roleRSqlQuery);
 		SqlQueryCon.addObserver(rolePSqlQuery);
 		
-		//////////////////////Attachment of serveurConfig////////////////////////////
+		//////////////////////Attachment of server Configuration////////////////////////////
 		
 		Attachement Manager2ConnectorSql = new Attachement("Manager2ConnectorSql", new Pair(dbQuery, rolePSqlQuery));
 		Attachement Db2ConnectorSql = new Attachement("Db2ConnectorSql", new Pair(queryIntDB, roleRSqlQuery));
@@ -106,6 +93,7 @@ public class Launcher {
 		
 		/**
 		 * Initializing server components 
+		 * 
 		 */
 		server.addInterface(receiveRequest);
 		server.addComponent(database);
@@ -116,6 +104,7 @@ public class Launcher {
 		server.addLink(Manager2ConnectorSql);
 		server.addConnector(conSqlQuery);
 	
+		
 		///////////////////////////////Global Config/////////////////////////////////////
 		GlobalConfig globalConfig = new GlobalConfig("Global Config");
 		
@@ -159,7 +148,7 @@ public class Launcher {
 		client.addObserver(sendRequest);
 		sendRequest.addObserver(client);
 		
-//////////////////////////Attachment GlobalConfig////////////////////////////
+		//////////////////////////Attachment GlobalConfig////////////////////////////
 		
 		Attachement client2RPC = new Attachement("clientRPC", new Pair(sendRequest, roleP));
 		Attachement RPC2Serveur = new Attachement("RPCServeur", new Pair(roleR, receiveRequest));
@@ -176,7 +165,9 @@ public class Launcher {
 	}
 
 	public static void main(String[] args) {
-		
+		/*
+		 *  Application Launching entry point
+		 */
 		init();
 		
 	}
