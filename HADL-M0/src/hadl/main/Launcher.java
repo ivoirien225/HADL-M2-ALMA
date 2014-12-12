@@ -159,7 +159,7 @@ public class Launcher {
 		globalConfig.addLink(client2RPC);
 		globalConfig.addLink(RPC2Serveur);
 		 
-		System.out.println(client.getClass().getSimpleName()+" Sending request from ....");
+		System.out.println(client.getClass().getSimpleName()+" Sending request ....");
 		client.notifyObservers(client, resquest);
 		
 	}
